@@ -1,5 +1,82 @@
+$maincolor: #00d8ff;
+$textcolor: #737b80;
+$navcolor: #f297b1;
+$headertext: #d6d6d6;
+$appearblocktext: #d4ce9a;
+$appearblocktitle: #f899b4;
+$appearblockcolor: #2d3a42;
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("/content/fonts/Montserrat/Montserrat-Medium.ttf") format("ttf");
+}
+@font-face {
+  font-family: "Museo";
+  src: url("/content/fonts/museo/Museo300-Regular.otf") format("otf");
+}
+@font-face {
+  font-family: "Marven";
+  src: url("/content/fonts/maven-pro/MavenPro-Medium.ttf") format("ttf");
+}
+
 body {
+  font-family: "Montserrat", Arial;
+  margin: 0;
+  header {
+    background-image: url(/content/images/header.jpg);
+    .burger-menu {
+      width: 30px;
+      height: 30px;
+      span {
+        display: block;
+        width: 100px;
+        height: 10px;
+        background-color: $appearblockcolor;
+      }
+    }
+    img {
+      width: 40vw;
+    }
+    nav {
+      background-color: $maincolor;
+      width: 100vw;
+      left: 10vw;
+      ul {
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-end;
+        li {
+          list-style-type: none;
+          a {
+            cursor: pointer;
+            text-decoration: none;
+            color: $appearblockcolor;
+            font-size: 2em;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
   main {
-      background-color: rgb(235, 235, 255);
+    background-color: rgb(235, 235, 255);
+    ul {
+      margin: 0;
+      padding: 0px;
+      li {
+        list-style-type: none;
+        img {
+          width: 100vw;
+          height: auto;
+        }
+        a {
+          text-decoration: none;
+        }
+      }
+    }
   }
 }
