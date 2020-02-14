@@ -23,27 +23,77 @@ body {
   font-family: "Montserrat", Arial;
   margin: 0;
   header {
-    img {
+    .logo-kazan{
+      width:50vw;
+      margin: 20px;
+      height: auto;
+      position: fixed;
+      z-index:1;
+    }
+    .image-header {
       width: 100vw;
       height: auto;
     }
-    .header-menu{
+    .burger-menu{
       position: fixed;
+      top:20px;
+      height: 100vh;
+      width: 90vw;
+      z-index:1;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-end;
+      span{
+        display: block;
+        width: 40px;
+        height: 5px;
+        margin-top: 10px;
+        background-color: $headertext;
+      }
+      .span-top{
+        width:30px;
+      }
+      .span-bottom{
+        width: 20px;
+      }
     }
-    .search-container{
-      position: fixed;
-    }
+    
     .header-menu {
       height: 100vh;
       width: 100vw;
       position: fixed;
+      display: none;
       top: 0;
       background-color: $maincolor;
+      display: flex;
+      align-items: flex-end;
+      justify-content: flex-end;
+      .search-container{
+        align-self: flex-start;
+      position: fixed;
+      width: 90vw;
+      top:70vh;
+      right: 8vw;
+      display: flex;
+      justify-content: flex-end;
+      z-index:2;
+      
+    }
       .header-menu-ul {
+        padding:0;
+        margin: 50px;
+        display: flex;
+        flex-direction: column;
+          align-items: flex-end;
         .header-menu-li {
           list-style-type: none;
+          margin-top: 1vh;
           a {
             text-decoration: none;
+            font-size: 2em;
+            font-weight: bold;
+            color: $appearblockcolor;
           }
         }
       }

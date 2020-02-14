@@ -18,33 +18,115 @@ body {
   margin: 0;
 }
 
-body header img {
+body header .logo-kazan {
+  width: 50vw;
+  margin: 20px;
+  height: auto;
+  position: fixed;
+  z-index: 1;
+}
+
+body header .image-header {
   width: 100vw;
   height: auto;
 }
 
-body header .header-menu {
+body header .burger-menu {
   position: fixed;
+  top: 20px;
+  height: 100vh;
+  width: 90vw;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
-body header .search-container {
-  position: fixed;
+body header .burger-menu span {
+  display: block;
+  width: 40px;
+  height: 5px;
+  margin-top: 10px;
+  background-color: #d6d6d6;
+}
+
+body header .burger-menu .span-top {
+  width: 30px;
+}
+
+body header .burger-menu .span-bottom {
+  width: 20px;
 }
 
 body header .header-menu {
   height: 100vh;
   width: 100vw;
   position: fixed;
+  display: none;
   top: 0;
   background-color: #00d8ff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+body header .header-menu .search-container {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  position: fixed;
+  width: 90vw;
+  top: 70vh;
+  right: 8vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  z-index: 2;
+}
+
+body header .header-menu .header-menu-ul {
+  padding: 0;
+  margin: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
 body header .header-menu .header-menu-ul .header-menu-li {
   list-style-type: none;
+  margin-top: 1vh;
 }
 
 body header .header-menu .header-menu-ul .header-menu-li a {
   text-decoration: none;
+  font-size: 2em;
+  font-weight: bold;
+  color: #2d3a42;
 }
 
 body main {
