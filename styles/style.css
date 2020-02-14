@@ -318,6 +318,23 @@ body main .activity-list .activity-spot .activity-infos a .infos-title {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  position: relative;
+}
+
+body main .activity-list .activity-spot .activity-infos a .infos-title::after {
+  content: "";
+  position: absolute;
+  width: 0.25em;
+  height: 0.25em;
+  border-radius: 50%;
+  background: white;
+  bottom: 0;
+  left: 90%;
+  margin-bottom: -0.5em;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  -webkit-filter: drop-shadow(0.5em 0px 0px) drop-shadow(-0.5em 0px 0px);
+          filter: drop-shadow(0.5em 0px 0px) drop-shadow(-0.5em 0px 0px);
 }
 
 body main .activity-list .activity-spot .activity-infos a .infos-title span {
@@ -373,6 +390,11 @@ body main .get-ticket {
       -ms-flex-align: center;
           align-items: center;
   position: absolute;
+}
+
+body main .get-ticket .get-ticket-box-shadow {
+  -webkit-box-shadow: 0px 0px 13px -5px white;
+          box-shadow: 0px 0px 13px -5px white;
 }
 
 body main .get-ticket .get-ticket-btn {
@@ -509,7 +531,9 @@ body footer .footer-section .visit-tatarstan {
   font-weight: bold;
 }
 
-body footer .footer-section .footer-tel-numb, body footer .footer-section .footer-speaker-support, body footer .footer-section .visit-tatarstan {
+body footer .footer-section .footer-tel-numb,
+body footer .footer-section .footer-speaker-support,
+body footer .footer-section .visit-tatarstan {
   margin: 0;
   margin-bottom: 10px;
 }
