@@ -16,6 +16,21 @@
 body {
   font-family: "Montserrat", Arial;
   margin: 0;
+  padding: 0;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 body header h1 {
@@ -62,11 +77,11 @@ body header .burger-menu span {
   width: 40px;
   height: 5px;
   margin-top: 10px;
-  background-color: #d6d6d6;
+  background-color: #00d8ff;
 }
 
 body header .burger-menu .span-top {
-  width: 30px;
+  width: 35px;
 }
 
 body header .burger-menu .span-bottom {
@@ -74,7 +89,72 @@ body header .burger-menu .span-bottom {
 }
 
 body header .header-menu-none {
+  -webkit-transform: translateX(100vw);
+          transform: translateX(100vw);
   display: none;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  background-color: #00d8ff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+body header .header-menu-none .search-container {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  position: fixed;
+  width: 60vw;
+  top: 65vh;
+}
+
+body header .header-menu-none .search-container .search-form .search-input {
+  background-color: #00d8ff;
+  color: #2d3a42;
+  border: none;
+  background: none;
+}
+
+body header .header-menu-none .search-container .search-form .search-btn {
+  background: none;
+  border: none;
+  color: #2d3a42;
+  font-size: 1.5em;
+}
+
+body header .header-menu-none .header-menu-ul {
+  padding: 0;
+  margin: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+body header .header-menu-none .header-menu-ul .header-menu-li {
+  list-style-type: none;
+  margin-top: 1vh;
+}
+
+body header .header-menu-none .header-menu-ul .header-menu-li a {
+  text-decoration: none;
+  font-size: 2em;
+  font-weight: bold;
+  color: #2d3a42;
 }
 
 body header .header-menu {
@@ -144,6 +224,12 @@ body header .header-menu .header-menu-ul .header-menu-li a {
 }
 
 body header .header-infos {
+  height: 100vh;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#080d41b6), to(#4924c49d)), url(/content/images/header.jpg);
+  background-image: linear-gradient(#080d41b6, #4924c49d), url(/content/images/header.jpg);
+  background-size: auto, auto 50vh;
+  background-repeat: no-repeat;
+  background-position-x: 85%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -160,12 +246,13 @@ body header .header-infos {
 }
 
 body header .header-infos .image-header {
-  width: 100vw;
-  height: auto;
+  width: auto;
+  height: 50vh;
   top: 0;
 }
 
 body header .header-infos .header-title {
+  margin-top: 50vh;
   color: #00d8ff;
   font-size: 4em;
   font-weight: lighter;
@@ -173,6 +260,7 @@ body header .header-infos .header-title {
 
 body header .header-infos .header-subtitle {
   color: #00d8ff;
+  margin-top: 0;
   font-size: 2em;
   font-weight: lighter;
 }
@@ -183,24 +271,41 @@ body header .header-infos .header-hat {
 
 body header .header-infos .schedule {
   margin: 10px;
-  padding: 10px 50px;
+  margin-top: 30px;
+  padding: 20px 60px;
   background-color: #00d8ff;
+  font-size: 1.2em;
+  font-weight: bold;
+  text-transform: uppercase;
   border: none;
   border-radius: 50px;
+  color: white;
   -webkit-box-shadow: 0px 0px 13px -2px #3f3f3f;
           box-shadow: 0px 0px 13px -2px #3f3f3f;
 }
 
 body main {
   background-color: #ebebff;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+}
+
+body main .que-faire {
+  text-align: center;
+  color: #00d8ff;
+  font-weight: bold;
 }
 
 body main ul {
   margin: 0;
   padding: 0px;
+  width: 90vw;
 }
 
 body main ul li {
+  width: 90vw;
+  margin: 5vw;
   list-style-type: none;
 }
 
