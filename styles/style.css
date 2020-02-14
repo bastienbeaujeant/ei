@@ -1,16 +1,16 @@
 @font-face {
   font-family: "Montserrat";
-  src: url("/content/fonts/Montserrat/Montserrat-Medium.ttf") format("ttf");
+  src: url("../content/fonts/Montserrat/Montserrat-Medium.ttf");
 }
 
 @font-face {
-  font-family: "Museo";
-  src: url("/content/fonts/museo/Museo300-Regular.otf") format("otf");
+  font-family: "Museo300-Regular";
+  src: url("../content/fonts/museo/Museo300-Regular.otf");
 }
 
 @font-face {
   font-family: "Marven";
-  src: url("/content/fonts/maven-pro/MavenPro-Medium.ttf") format("ttf");
+  src: url("../content/fonts/maven-pro/MavenPro-Medium.ttf");
 }
 
 body {
@@ -212,8 +212,8 @@ body header .header-menu .header-menu-ul .header-menu-li a {
 
 body header .header-infos {
   height: 100vh;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#080d41b6), to(#4924c49d)), url(/content/images/header.jpg);
-  background-image: linear-gradient(#080d41b6, #4924c49d), url(/content/images/header.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#04444d91), to(#1f02559d)), url(/content/images/header.jpg);
+  background-image: linear-gradient(#04444d91, #1f02559d), url(/content/images/header.jpg);
   background-size: auto, auto 50vh;
   background-repeat: no-repeat;
   background-position-x: 85%;
@@ -272,7 +272,6 @@ body header .header-infos .schedule {
 }
 
 body main {
-  background-color: #ebebff;
   width: 100vw;
   margin: 0;
   padding: 0;
@@ -284,28 +283,223 @@ body main .que-faire {
   font-weight: bold;
 }
 
-body main ul {
+body main .activity-list {
   margin: 0;
   padding: 0px;
   width: 90vw;
 }
 
-body main ul li {
+body main .activity-list .activity-spot {
   width: 90vw;
   margin: 5vw;
   list-style-type: none;
 }
 
-body main ul li img {
+body main .activity-list .activity-spot .activity-infos {
+  background-color: #2d3a42;
+  padding: 20px;
+}
+
+body main .activity-list .activity-spot .activity-infos a {
+  text-decoration: none;
+}
+
+body main .activity-list .activity-spot .activity-infos a h2,
+body main .activity-list .activity-spot .activity-infos a p {
+  color: white;
+}
+
+body main .activity-list .activity-spot .activity-infos a .infos-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body main .activity-list .activity-spot .activity-infos a .infos-title span {
+  font-family: "Museo300-Regular", serif;
+  font-weight: lighter;
+  line-height: .5;
+}
+
+body main .activity-list .activity-spot .activity-infos a .image-spot {
+  height: 100%;
+  width: 100%;
+}
+
+body main .activity-list .activity-spot .activity-infos a .infos-location {
+  font-weight: lighter;
+}
+
+body main .activity-list .activity-spot .activity-infos a .infos-location, body main .activity-list .activity-spot .activity-infos a .infos-subtitle {
+  color: #d4ce9a;
+}
+
+body main .activity-list .activity-spot .activity-infos a img {
   width: 80vw;
   height: auto;
 }
 
-body main ul li a {
-  text-decoration: none;
+body main .activity-list .activity-spot .activity-infos .like-btn {
+  color: white;
+  border: none;
+  background: none;
 }
 
-body footer img {
+body main .activity-list .activity-spot .activity-infos .see-more {
+  color: white;
+  border: none;
+  background: none;
+}
+
+body main .get-ticket {
   width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+}
+
+body main .get-ticket .get-ticket-btn {
+  background-color: #00d8ff;
+  width: 55vw;
+  color: #2d3a42;
+  font-size: 1.2em;
+  font-weight: bold;
+  padding: 20px 20px;
+  border-radius: 5px 5px 0 0;
+  border: none;
+}
+
+body main .get-ticket .payment-type {
+  height: 30px;
+  width: 50vw;
+  padding: 10px;
+  border-radius: 0 0 5px 5px;
+  background-color: #2d3a42;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body main .get-ticket .payment-type i {
+  color: grey;
+}
+
+body main .get-ticket .payment-type p {
+  color: white;
+}
+
+body main .get-ticket .payment-type p span {
+  color: #00d8ff;
+}
+
+body footer {
+  width: 100vw;
+  margin-top: 10vh;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#04444d91), to(#1f02559d)), url(/content/images/brent-cox-mid.jpg);
+  background-image: linear-gradient(#04444d91, #1f02559d), url(/content/images/brent-cox-mid.jpg);
+  background-size: auto, auto 100vh;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body footer .footer-section {
+  color: white;
+  width: 80vw;
+  margin-top: 10vh;
+}
+
+body footer .footer-section .footer-head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body footer .footer-section .footer-head .pin-location-logo {
+  height: 1.5em;
+  width: auto;
+  padding-right: 4vw;
+}
+
+body footer .footer-section .kazan-night {
+  display: none;
+  width: 50vw;
+}
+
+body footer .footer-section .logo-partner {
+  margin: 5vw;
+  margin-bottom: 5vh;
+  width: 30vw;
+}
+
+body footer .footer-section .rs {
+  background-color: white;
+  padding: 5vw;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body footer .footer-section .rs .follow-us {
+  color: #00d8ff;
+  font-size: 1.2rem;
+  padding: 1vh;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body footer .footer-section .rs .rs-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px 10px 0px 10px;
+  color: #2d3a42;
 }
 /*# sourceMappingURL=style.css.map */

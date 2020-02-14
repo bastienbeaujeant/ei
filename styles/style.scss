@@ -9,15 +9,15 @@ $appeartext: #284e68;
 
 @font-face {
   font-family: "Montserrat";
-  src: url("/content/fonts/Montserrat/Montserrat-Medium.ttf") format("ttf");
+  src: url("../content/fonts/Montserrat/Montserrat-Medium.ttf");
 }
 @font-face {
-  font-family: "Museo";
-  src: url("/content/fonts/museo/Museo300-Regular.otf") format("otf");
+  font-family: "Museo300-Regular";
+  src: url("../content/fonts/museo/Museo300-Regular.otf");
 }
 @font-face {
   font-family: "Marven";
-  src: url("/content/fonts/maven-pro/MavenPro-Medium.ttf") format("ttf");
+  src: url("../content/fonts/maven-pro/MavenPro-Medium.ttf");
 }
 
 body {
@@ -25,11 +25,12 @@ body {
   margin: 0;
   padding: 0;
   width: 100vw;
+
   header {
-    h1{
-      margin:0px;
+    h1 {
+      margin: 0px;
     }
-    .invisible{
+    .invisible {
       display: none;
     }
     .logo-kazan {
@@ -65,7 +66,7 @@ body {
         width: 20px;
       }
     }
-    .header-menu-none{
+    .header-menu-none {
       transform: translateX(100vw);
       display: none;
       height: 100vh;
@@ -161,13 +162,14 @@ body {
         }
       }
     }
-    .header-infos{height: 100vh;
-      background-image:linear-gradient( #080d41b6,#4924c49d), url(/content/images/header.jpg);
- background-size: auto, auto 50vh;
- background-repeat: no-repeat;
- background-position-x: 85%;
-      
-      
+    .header-infos {
+      height: 100vh;
+      background-image: linear-gradient(#04444d91, #1f02559d),
+        url(/content/images/header.jpg);
+      background-size: auto, auto 50vh;
+      background-repeat: no-repeat;
+      background-position-x: 85%;
+
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -177,67 +179,194 @@ body {
         height: 50vh;
         top: 0;
       }
-      .header-title{
-        margin-top:50vh;
-        color:$maincolor;
+      .header-title {
+        margin-top: 50vh;
+        color: $maincolor;
         font-size: 4em;
         font-weight: lighter;
       }
-      .header-subtitle{
-        color:$maincolor;
-        margin-top:0;
+      .header-subtitle {
+        color: $maincolor;
+        margin-top: 0;
         font-size: 2em;
         font-weight: lighter;
       }
-      .header-hat{
-        display:none;
+      .header-hat {
+        display: none;
       }
-      .schedule{
+      .schedule {
         margin: 10px;
         margin-top: 30px;
-      padding:20px 60px;
-      background-color: $maincolor;
-      font-size: 1.2em;
-      font-weight: bold;
-      text-transform: uppercase;
-      border:none;
-      border-radius: 50px;
-      color: white;
-      box-shadow: 0px 0px 13px -2px rgb(63, 63, 63)
+        padding: 20px 60px;
+        background-color: $maincolor;
+        font-size: 1.2em;
+        font-weight: bold;
+        text-transform: uppercase;
+        border: none;
+        border-radius: 50px;
+        color: white;
+        box-shadow: 0px 0px 13px -2px rgb(63, 63, 63);
       }
     }
   }
   main {
-    background-color: rgb(235, 235, 255);
     width: 100vw;
-    margin:0;
-    padding:0;
-    .que-faire{
+    margin: 0;
+    padding: 0;
+    .que-faire {
       text-align: center;
       color: $maincolor;
       font-weight: bold;
     }
-    ul {
+    .activity-list {
       margin: 0;
       padding: 0px;
       width: 90vw;
-      li {
+      .activity-spot {
         width: 90vw;
         margin: 5vw;
         list-style-type: none;
-        img {
-          width: 80vw;
-          height: auto;
+        .activity-infos {
+          background-color: $appearblockcolor;
+          padding: 20px;
+          a {
+            text-decoration: none;
+            h2,
+            p {
+              color: white;
+            }
+            .infos-title {
+              display: flex;
+              flex-direction: column;
+              span {
+                font-family: "Museo300-Regular", serif;
+                font-weight: lighter;
+                line-height: 0.5;
+              }
+            }
+            .image-spot {
+              height: 100%;
+              width: 100%;
+            }
+            .infos-location {
+              font-weight: lighter;
+            }
+            .infos-location,
+            .infos-subtitle {
+              color: $appearblocktext;
+            }
+            img {
+              width: 80vw;
+              height: auto;
+            }
+          }
+          .like-btn {
+            color: white;
+            border: none;
+            background: none;
+          }
+          .see-more {
+            color: white;
+            border: none;
+            background: none;
+          }
         }
-        a {
-          text-decoration: none;
+      }
+    }
+    .get-ticket {
+      width: 100vw;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+
+      .get-ticket-btn {
+        background-color: $maincolor;
+        width: 55vw;
+        color: $appearblockcolor;
+        font-size: 1.2em;
+        font-weight: bold;
+        padding: 20px 20px;
+        border-radius: 5px 5px 0 0;
+        border: none;
+      }
+      .payment-type {
+        height: 30px;
+        width: 50vw;
+        padding: 10px;
+        border-radius: 0 0 5px 5px;
+        background-color: $appearblockcolor;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        i {
+          color: grey;
+        }
+        p {
+          color: white;
+          span {
+            color: $maincolor;
+          }
         }
       }
     }
   }
   footer {
-    img {
-      width: 100vw;
+    width: 100vw;
+    margin-top: 10vh;
+    background-image: linear-gradient(#04444d91, #1f02559d),
+      url(/content/images/brent-cox-mid.jpg);
+    background-size: auto, auto 100vh;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    .footer-section {
+      color: white;
+      width: 80vw;
+      margin-top: 10vh;
+      .footer-head {
+        display: flex;
+        align-items: center;
+
+        .pin-location-logo {
+          height: 1.5em;
+          width: auto;
+          padding-right: 4vw;
+        }
+      }
+      .kazan-night {
+        display: none;
+        width: 50vw;
+      }
+      .logo-partner {
+        margin: 5vw;
+        margin-bottom: 5vh;
+        width: 30vw;
+      }
+      .rs {
+        background-color: white;
+        padding: 5vw;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .follow-us {
+          color: $maincolor;
+          font-size: 1.2rem;
+          padding: 1vh;
+          margin: 0;
+          display: flex;
+          justify-content: space-between;
+        }
+        .rs-links {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 20px 10px 0px 10px;
+          color: $appearblockcolor;
+        }
+      }
     }
   }
 }
