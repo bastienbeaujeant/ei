@@ -5,6 +5,8 @@ let searchInput = document.querySelector(".search-input");
 let searchIcon = document.querySelector(".search-btn");
 let body = document.querySelector("body");
 let slider = document.querySelectorAll(".activity-spot");
+let localization = document.querySelectorAll(".infos-location");
+let monumentStyle = document.querySelectorAll(".infos-subtitle")
 
 burgerMenu.addEventListener("click", function() {
   burgerMenu.classList.toggle("fixed");
@@ -34,8 +36,8 @@ slider.forEach(element => {
   });
 });
 
-let location = querySelectorAll(".infos-location")
-location.forEach(element => {
+
+localization.forEach(element => {
   if(element.classList.contains("center")){
   element.classList.add("center")
   }
@@ -43,3 +45,13 @@ location.forEach(element => {
     element.classList.add("out")
   }
 });
+
+monumentStyle.forEach(element => {
+  if(element.classList.contains("center")){
+  element.classList.add("center")
+  }
+  else{
+    element.classList.add("out")
+  }
+});
+

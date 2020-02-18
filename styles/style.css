@@ -272,6 +272,7 @@
   body header .header-menu.none {
     -webkit-transform: translateX(-100vw);
             transform: translateX(-100vw);
+    opacity: 0;
     -webkit-animation-duration: 1s;
             animation-duration: 1s;
     z-index: 200;
@@ -338,6 +339,7 @@
   body header .header-menu {
     -webkit-transform: translateX(0vw);
             transform: translateX(0vw);
+    opacity: 1;
     height: 100vh;
     width: 100vw;
     position: fixed;
@@ -465,8 +467,7 @@
     padding: 0;
   }
   main .que-faire {
-    margin-top: 6vh;
-    text-align: center;
+    margin: 6vh 3vw 2vh;
     color: #00d8ff;
     font-weight: bold;
   }
@@ -552,6 +553,9 @@
   main .activity-list .activity-spot .center {
     color: #d4ce9a;
   }
+  main .activity-list .activity-spot .out {
+    color: #f297b1;
+  }
   main .activity-list .activity-spot .activity-infos {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -561,6 +565,7 @@
         -ms-flex-direction: column;
             flex-direction: column;
     background-color: #2d3a42;
+    height: 50vh;
     margin: 0;
   }
   main .activity-list .activity-spot .activity-infos a {
@@ -596,9 +601,7 @@
     display: none;
   }
   main .activity-list .activity-spot .activity-infos a .infos-location {
-    margin: 0;
-    padding: 0 20px;
-    font-weight: lighter;
+    display: none;
   }
   main .activity-list .activity-spot .activity-infos a .infos-location,
   main .activity-list .activity-spot .activity-infos a .infos-subtitle {
@@ -669,6 +672,9 @@
   main .activity-list .activity-spot.min .center {
     color: #d4ce9a;
   }
+  main .activity-list .activity-spot.min .out {
+    color: #f297b1;
+  }
   main .activity-list .activity-spot.min .activity-infos {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -719,6 +725,7 @@
             order: -1;
   }
   main .activity-list .activity-spot.min .activity-infos a .infos-location {
+    display: block;
     margin: 0;
     padding: 0 20px;
     font-weight: lighter;
@@ -790,6 +797,12 @@
     color: #00d8ff;
     font-weight: bold;
   }
+  main .center {
+    color: #d4ce9a;
+  }
+  main .out {
+    color: #f297b1;
+  }
   main .activity-list {
     margin: 0;
     padding: 0px;
@@ -849,10 +862,6 @@
   main .activity-list .activity-spot .activity-infos a .infos-location {
     font-weight: lighter;
   }
-  main .activity-list .activity-spot .activity-infos a .infos-location,
-  main .activity-list .activity-spot .activity-infos a .infos-subtitle {
-    color: #d4ce9a;
-  }
   main .activity-list .activity-spot .activity-infos a img {
     width: 80vw;
     height: auto;
@@ -899,7 +908,7 @@
     width: 0.25em;
     height: 0.25em;
     border-radius: 50%;
-    background: grey;
+    background-color: grey;
     bottom: 0;
     left: 90%;
     margin-bottom: -0.5em;

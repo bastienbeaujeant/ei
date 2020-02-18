@@ -5,8 +5,7 @@
     padding: 0;
 
     .que-faire {
-      margin-top: 6vh;
-      text-align: center;
+      margin: 6vh 3vw 2vh;
       color: $maincolor;
       font-weight: bold;
     }
@@ -70,11 +69,14 @@
         .center {
           color: $appearblocktext;
         }
+        .out{
+          color: $navcolor;
+        }
         .activity-infos {
           display: flex;
           flex-direction: column;
           background-color: $appearblockcolor;
-
+          height: 50vh;
           margin: 0;
           a {
             text-decoration: none;
@@ -101,9 +103,7 @@
               display: none;
             }
             .infos-location {
-              margin: 0;
-              padding: 0 20px;
-              font-weight: lighter;
+              display: none;
             }
             .infos-location,
             .infos-subtitle {
@@ -170,11 +170,13 @@
         .center {
           color: $appearblocktext;
         }
+        .out{
+          color: $navcolor;
+        }
         .activity-infos {
           display: flex;
           flex-direction: column;
           background-color: white;
-
           margin: 0;
           a {
             text-decoration: none;
@@ -204,6 +206,7 @@
               order: -1;
             }
             .infos-location {
+              display: block;
               margin: 0;
               padding: 0 20px;
               font-weight: lighter;
@@ -273,6 +276,12 @@
       color: $maincolor;
       font-weight: bold;
     }
+    .center {
+      color: $appearblocktext;
+    }
+    .out{
+      color: $navcolor;
+    }
     .activity-list {
       margin: 0;
       padding: 0px;
@@ -321,10 +330,7 @@
             .infos-location {
               font-weight: lighter;
             }
-            .infos-location,
-            .infos-subtitle {
-              color: $appearblocktext;
-            }
+            
             img {
               width: 80vw;
               height: auto;
@@ -369,7 +375,7 @@
             width: 0.25em;
             height: 0.25em;
             border-radius: 50%;
-            background: grey;
+            background-color: grey;
             bottom: 0;
             left: 90%;
             margin-bottom: -0.5em;

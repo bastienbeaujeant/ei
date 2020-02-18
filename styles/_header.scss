@@ -220,6 +220,7 @@
       }
       .header-menu.none {
         transform: translateX(-100vw);
+        opacity: 0;
         animation-duration: 1s;
         z-index: 200;
         height: 100vh;
@@ -271,6 +272,7 @@
       }
       .header-menu {
         transform: translateX(0vw);
+        opacity: 1;
         height: 100vh;
         width: 100vw;
         position: fixed;
