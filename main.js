@@ -33,3 +33,13 @@ slider.forEach(element => {
     element.classList.toggle("min");
   });
 });
+
+let location = querySelectorAll(".infos-location")
+location.forEach(element => {
+  if(element.classList.contains("center")){
+  element.classList.add("center")
+  }
+  else{
+    element.classList.add("out")
+  }
+});

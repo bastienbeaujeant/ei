@@ -470,6 +470,65 @@
     color: #00d8ff;
     font-weight: bold;
   }
+  main .get-ticket {
+    width: 100vw;
+    margin-top: 3vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: absolute;
+  }
+  main .get-ticket .get-ticket-box-shadow {
+    -webkit-box-shadow: 0px 0px 13px -5px white;
+            box-shadow: 0px 0px 13px -5px white;
+  }
+  main .get-ticket .get-ticket-btn {
+    cursor: pointer;
+    background-color: #00d8ff;
+    width: 20vw;
+    color: #2d3a42;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 20px 20px;
+    border-radius: 5px 5px 0 0;
+    border: none;
+  }
+  main .get-ticket .payment-type {
+    height: 5vh;
+    width: 20vw;
+    border-radius: 0 0 5px 5px;
+    background-color: #2d3a42;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main .get-ticket .payment-type i {
+    padding: 10px;
+    color: grey;
+  }
+  main .get-ticket .payment-type p {
+    padding: 10px;
+    color: white;
+  }
+  main .get-ticket .payment-type p span {
+    color: #00d8ff;
+  }
   main .activity-list {
     margin: 0;
     padding: 0px;
@@ -534,11 +593,7 @@
     line-height: 0.5;
   }
   main .activity-list .activity-spot .activity-infos a .image-spot {
-    height: 22vw;
-    width: 22vw;
-    -webkit-box-ordinal-group: 0;
-        -ms-flex-order: -1;
-            order: -1;
+    display: none;
   }
   main .activity-list .activity-spot .activity-infos a .infos-location {
     margin: 0;
@@ -604,8 +659,17 @@
     -webkit-filter: drop-shadow(0.5em 0px 0px white) drop-shadow(-0.5em 0px 0px white);
             filter: drop-shadow(0.5em 0px 0px white) drop-shadow(-0.5em 0px 0px white);
   }
-  main .get-ticket {
-    width: 100vw;
+  main .activity-list .activity-spot.min {
+    width: 22vw;
+    height: 50vh;
+    margin: 1vw;
+    list-style-type: none;
+    overflow: hidden;
+  }
+  main .activity-list .activity-spot.min .center {
+    color: #d4ce9a;
+  }
+  main .activity-list .activity-spot.min .activity-infos {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -613,55 +677,105 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    position: absolute;
-    margin-top: 30px;
+    background-color: white;
+    margin: 0;
   }
-  main .get-ticket .get-ticket-box-shadow {
-    -webkit-box-shadow: 0px 0px 13px -5px white;
-            box-shadow: 0px 0px 13px -5px white;
+  main .activity-list .activity-spot.min .activity-infos a {
+    text-decoration: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
-  main .get-ticket .get-ticket-btn {
-    cursor: pointer;
-    background-color: #00d8ff;
-    width: 30vw;
-    color: #2d3a42;
-    font-size: 1.2em;
-    font-weight: bold;
-    padding: 20px 20px;
-    border-radius: 5px 5px 0 0;
-    border: none;
+  main .activity-list .activity-spot.min .activity-infos a h2,
+  main .activity-list .activity-spot.min .activity-infos a p {
+    color: white;
   }
-  main .get-ticket .payment-type {
-    height: 30px;
-    width: 30vw;
-    border-radius: 0 0 5px 5px;
-    background-color: #2d3a42;
+  main .activity-list .activity-spot.min .activity-infos a .infos-title {
+    padding: 20px;
+    color: #737b80;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main .activity-list .activity-spot.min .activity-infos a .infos-title span {
+    font-family: "Museo300-Regular", serif;
+    font-weight: lighter;
+    line-height: 0.5;
+  }
+  main .activity-list .activity-spot.min .activity-infos a .image-spot {
+    display: block;
+    height: 22vw;
+    width: 22vw;
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+  }
+  main .activity-list .activity-spot.min .activity-infos a .infos-location {
+    margin: 0;
+    padding: 0 20px;
+    font-weight: lighter;
+    color: #00d8ff;
+  }
+  main .activity-list .activity-spot.min .activity-infos a .info-text {
+    display: none;
+  }
+  main .activity-list .activity-spot.min .activity-infos a .infos-subtitle {
+    display: none;
+  }
+  main .activity-list .activity-spot.min .activity-infos .spot-btn {
+    width: 50%;
+    padding: 20px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    position: relative;
   }
-  main .get-ticket .payment-type i {
-    color: grey;
-    padding: 20px;
-  }
-  main .get-ticket .payment-type p {
+  main .activity-list .activity-spot.min .activity-infos .spot-btn .like-btn {
     color: white;
-    padding: 20px;
+    border: none;
+    background: none;
   }
-  main .get-ticket .payment-type p span {
-    color: #00d8ff;
+  main .activity-list .activity-spot.min .activity-infos .spot-btn .see-more {
+    color: white;
+    border: none;
+    background: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  main .activity-list .activity-spot.min .activity-infos .spot-btn .see-more::before {
+    content: "";
+    display: block;
+    background-color: white;
+    height: 20px;
+    width: 1px;
+    margin-right: 20px;
+  }
+  main .activity-list .activity-spot.min .activity-infos .spot-btn::after {
+    content: "";
+    position: absolute;
+    width: 0.25em;
+    height: 0.25em;
+    border-radius: 50%;
+    background: grey;
+    bottom: 12vw;
+    left: 20vw;
+    margin-bottom: -0.5em;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    -webkit-filter: drop-shadow(0px 0.5em 0px grey) drop-shadow(0px -0.5em 0px grey);
+            filter: drop-shadow(0px 0.5em 0px grey) drop-shadow(0px -0.5em 0px grey);
   }
 }
 
@@ -714,7 +828,7 @@
     width: 0.25em;
     height: 0.25em;
     border-radius: 50%;
-    background: white;
+    background: grey;
     bottom: 0;
     left: 90%;
     margin-bottom: -0.5em;
@@ -797,7 +911,9 @@
   main .activity-spot.min .activity-infos .infos-location {
     color: #00d8ff !important;
   }
-  main .activity-spot.min .activity-infos .image-spot, main .activity-spot.min .activity-infos .infos-subtitle, main .activity-spot.min .activity-infos .info-text {
+  main .activity-spot.min .activity-infos .image-spot,
+  main .activity-spot.min .activity-infos .infos-subtitle,
+  main .activity-spot.min .activity-infos .info-text {
     display: none;
   }
   main .get-ticket {

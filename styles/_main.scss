@@ -10,6 +10,50 @@
       color: $maincolor;
       font-weight: bold;
     }
+    .get-ticket {
+      width: 100vw;
+      margin-top: 3vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      .get-ticket-box-shadow {
+        box-shadow: 0px 0px 13px -5px white;
+      }
+      .get-ticket-btn {
+        cursor: pointer;
+        background-color: $maincolor;
+        width: 20vw;
+        color: $appearblockcolor;
+        font-size: 1.2em;
+        font-weight: bold;
+        padding: 20px 20px;
+        border-radius: 5px 5px 0 0;
+        border: none;
+      }
+      .payment-type {
+        height: 5vh;
+        width: 20vw;
+
+        border-radius: 0 0 5px 5px;
+        background-color: $appearblockcolor;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        i {
+          padding: 10px;
+          color: grey;
+        }
+        p {
+          padding: 10px;
+          color: white;
+          span {
+            color: $maincolor;
+          }
+        }
+      }
+    }
     .activity-list {
       margin: 0;
       padding: 0px;
@@ -23,14 +67,14 @@
         margin: 1vw;
         list-style-type: none;
         overflow: hidden;
-        .center{
-            color: $appearblocktext;
+        .center {
+          color: $appearblocktext;
         }
         .activity-infos {
           display: flex;
           flex-direction: column;
           background-color: $appearblockcolor;
-          
+
           margin: 0;
           a {
             text-decoration: none;
@@ -40,14 +84,13 @@
             p {
               color: white;
             }
-            
+
             .infos-title {
-            padding: 20px;
+              padding: 20px;
 
               display: flex;
               flex-direction: column;
-              
-              
+
               span {
                 font-family: "Museo300-Regular", serif;
                 font-weight: lighter;
@@ -55,28 +98,25 @@
               }
             }
             .image-spot {
-              height:22vw;
-              width: 22vw;
-              order: -1;
+              display: none;
             }
             .infos-location {
-                margin: 0;
-                padding:  0 20px;
+              margin: 0;
+              padding: 0 20px;
               font-weight: lighter;
             }
             .infos-location,
             .infos-subtitle {
               color: $appearblocktext;
             }
-            .info-text{
-                margin:0;
-                padding:  10px 20px;
+            .info-text {
+              margin: 0;
+              padding: 10px 20px;
             }
-            .infos-subtitle{
-                margin:0;
-                padding:  10px 20px;
+            .infos-subtitle {
+              margin: 0;
+              padding: 10px 20px;
             }
-            
           }
           .spot-btn {
             width: 50%;
@@ -105,62 +145,117 @@
               }
             }
             &::after {
-            content: "";
-            position: absolute;
-            width: 0.25em;
-            height: 0.25em;
-            border-radius: 50%;
-            background: rgb(255, 255, 255);
-            bottom:3vw;
-            left: 18vw;
-            margin-bottom: -0.5em;
-            transform: translateX(-50%);
-            filter: drop-shadow(0.5em 0px 0px white) drop-shadow(-0.5em 0px 0px white);
-          }
+              content: "";
+              position: absolute;
+              width: 0.25em;
+              height: 0.25em;
+              border-radius: 50%;
+              background: rgb(255, 255, 255);
+              bottom: 3vw;
+              left: 18vw;
+              margin-bottom: -0.5em;
+              transform: translateX(-50%);
+              filter: drop-shadow(0.5em 0px 0px white)
+                drop-shadow(-0.5em 0px 0px white);
+            }
           }
         }
       }
-    }
-    .get-ticket {
-        
-      width: 100vw;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      position: absolute;
-      margin-top: 30px;
-      .get-ticket-box-shadow {
-        box-shadow: 0px 0px 13px -5px white;
-      }
-      .get-ticket-btn {
-          cursor: pointer;
-        background-color: $maincolor;
-        width: 30vw;
-        color: $appearblockcolor;
-        font-size: 1.2em;
-        font-weight: bold;
-        padding: 20px 20px;
-        border-radius: 5px 5px 0 0;
-        border: none;
-      }
-      .payment-type {
-        height: 30px;
-        width: 30vw;
-        border-radius: 0 0 5px 5px;
-        background-color: $appearblockcolor;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        i {
-          color: grey;
-          padding: 20px;
+      .activity-spot.min {
+        width: 22vw;
+        height: 50vh;
+        margin: 1vw;
+        list-style-type: none;
+        overflow: hidden;
+        .center {
+          color: $appearblocktext;
         }
-        p {
-          color: white;
-          padding: 20px;
-          span {
-            color: $maincolor;
+        .activity-infos {
+          display: flex;
+          flex-direction: column;
+          background-color: white;
+
+          margin: 0;
+          a {
+            text-decoration: none;
+            display: flex;
+            flex-direction: column;
+            h2,
+            p {
+              color: white;
+            }
+
+            .infos-title {
+              padding: 20px;
+              color: $textcolor;
+              display: flex;
+              flex-direction: column;
+
+              span {
+                font-family: "Museo300-Regular", serif;
+                font-weight: lighter;
+                line-height: 0.5;
+              }
+            }
+            .image-spot {
+              display: block;
+              height: 22vw;
+              width: 22vw;
+              order: -1;
+            }
+            .infos-location {
+              margin: 0;
+              padding: 0 20px;
+              font-weight: lighter;
+              color: $maincolor;
+            }
+            .info-text {
+              display: none;
+            }
+            .infos-subtitle {
+              display: none;
+            }
+          }
+          .spot-btn {
+            width: 50%;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+            .like-btn {
+              color: white;
+              border: none;
+              background: none;
+            }
+            .see-more {
+              color: white;
+              border: none;
+              background: none;
+              display: flex;
+              &::before {
+                content: "";
+                display: block;
+                background-color: white;
+
+                height: 20px;
+                width: 1px;
+                margin-right: 20px;
+              }
+            }
+            &::after {
+              content: "";
+              position: absolute;
+              width: 0.25em;
+              height: 0.25em;
+              border-radius: 50%;
+              background: grey;
+              bottom: 12vw;
+              left: 20vw;
+              margin-bottom: -0.5em;
+              transform: translateX(-50%);
+              filter: drop-shadow(0px 0.5em 0px grey)
+                drop-shadow(0px -0.5em 0px grey);
+            }
           }
         }
       }
@@ -206,7 +301,7 @@
                 width: 0.25em;
                 height: 0.25em;
                 border-radius: 50%;
-                background: rgb(255, 255, 255);
+                background: grey;
                 bottom: 0;
                 left: 90%;
                 margin-bottom: -0.5em;
@@ -263,11 +358,11 @@
         }
       }
     }
-    .activity-spot.min{
-      .activity-infos{
+    .activity-spot.min {
+      .activity-infos {
         background-color: rgb(241, 241, 241);
-        .infos-title{
-          color:$textcolor;
+        .infos-title {
+          color: $textcolor;
           &::after {
             content: "";
             position: absolute;
@@ -279,14 +374,17 @@
             left: 90%;
             margin-bottom: -0.5em;
             transform: translateX(-50%);
-            filter: drop-shadow(0.5em 0px 0px grey) drop-shadow(-0.5em 0px 0px grey);
+            filter: drop-shadow(0.5em 0px 0px grey)
+              drop-shadow(-0.5em 0px 0px grey);
           }
         }
-        .infos-location{
-          color:$maincolor !important;
+        .infos-location {
+          color: $maincolor !important;
         }
-        .image-spot, .infos-subtitle, .info-text{
-          display:none;
+        .image-spot,
+        .infos-subtitle,
+        .info-text {
+          display: none;
         }
       }
     }
