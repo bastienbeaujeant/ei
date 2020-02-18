@@ -44,6 +44,7 @@
               background: none;
             }
             .search-btn {
+              cursor: pointer;
               background: none;
               border: none;
               color: $navcolor;
@@ -59,15 +60,26 @@
           display: flex;
           justify-content: flex-end;
           .header-menu-li {
+              width: 12vw;
             list-style-type: none;
             margin-top: 1vh;
+            display: flex;
+            align-items: center;
+            &::after {
+              content: "";
+              display: block;
+              height: 30px;
+              width: 2px;
+              background-color: $navcolor;
+
+            }
             a {
-              width: 5em;
+              width: 7em;
               text-decoration: none;
               font-size: 1em;
-              font-weight: bold;
               padding: 0 1em;
               color: $navcolor;
+              display: flex;
             }
           }
         }
@@ -105,6 +117,7 @@
           display: none;
         }
         .schedule {
+          cursor: pointer;
           margin: 10px;
           margin-top: 30px;
           padding: 20px 60px;
@@ -206,7 +219,7 @@
         position: fixed;
       }
       .header-menu.none {
-        transform: translateX(100vw);
+        transform: translateX(-100vw);
         animation-duration: 1s;
         z-index: 200;
         height: 100vh;
@@ -217,6 +230,7 @@
         display: flex;
         align-items: flex-end;
         justify-content: flex-end;
+        transition: 1s ease;
         .search-container {
           align-self: flex-start;
           position: fixed;
@@ -265,7 +279,7 @@
         display: flex;
         align-items: flex-end;
         justify-content: flex-end;
-        animation: transform 1s ease;
+       transition: 1s ease;
         .search-container {
           align-self: flex-start;
           position: fixed;

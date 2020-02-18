@@ -1,146 +1,171 @@
 @media screen and (min-width: 768px) {
-main {
-  width: 100vw;
-  margin: 0;
-  padding: 0;
-
-  .que-faire {
-      margin-top: 6vh;
-    text-align: center;
-    color: $maincolor;
-    font-weight: bold;
-  }
-  .activity-list {
-    margin: 0;
-    padding: 0px;
+  main {
     width: 100vw;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    .activity-spot {
-      width: 20vw;
-      margin: 1vw;
-      list-style-type: none;
-      .activity-infos {
-        background-color: $appearblockcolor;
-        padding: 20px;
-        margin: 0;
-        a {
-          text-decoration: none;
-          h2,
-          p {
-            color: white;
-          }
-          .infos-title {
+    margin: 0;
+    padding: 0;
+
+    .que-faire {
+      margin-top: 6vh;
+      text-align: center;
+      color: $maincolor;
+      font-weight: bold;
+    }
+    .activity-list {
+      margin: 0;
+      padding: 0px;
+      width: 100vw;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      .activity-spot {
+        width: 22vw;
+        height: 50vh;
+        margin: 1vw;
+        list-style-type: none;
+        overflow: hidden;
+        .center{
+            color: $appearblocktext;
+        }
+        .activity-infos {
+          display: flex;
+          flex-direction: column;
+          background-color: $appearblockcolor;
+          
+          margin: 0;
+          a {
+            text-decoration: none;
             display: flex;
             flex-direction: column;
+            h2,
+            p {
+              color: white;
+            }
             
-            position: relative;
-            &::after {
-              content: "";
-              position: absolute;
-              width: 0.25em;
-              height: 0.25em;
-              border-radius: 50%;
-              background: rgb(255, 255, 255);
-              bottom: 0;
-              left: 90%;
-              margin-bottom: -0.5em;
-              transform: translateX(-50%);
-              filter: drop-shadow(0.5em 0px 0px) drop-shadow(-0.5em 0px 0px);
+            .infos-title {
+            padding: 20px;
+
+              display: flex;
+              flex-direction: column;
+              
+              
+              span {
+                font-family: "Museo300-Regular", serif;
+                font-weight: lighter;
+                line-height: 0.5;
+              }
             }
-            span {
-              font-family: "Museo300-Regular", serif;
+            .image-spot {
+              height:22vw;
+              width: 22vw;
+              order: -1;
+            }
+            .infos-location {
+                margin: 0;
+                padding:  0 20px;
               font-weight: lighter;
-              line-height: 0.5;
             }
+            .infos-location,
+            .infos-subtitle {
+              color: $appearblocktext;
+            }
+            .info-text{
+                margin:0;
+                padding:  10px 20px;
+            }
+            .infos-subtitle{
+                margin:0;
+                padding:  10px 20px;
+            }
+            
           }
-          .image-spot {
-            height: 90%;
-            width: 90%;
-          }
-          .infos-location {
-            font-weight: lighter;
-          }
-          .infos-location,
-          .infos-subtitle {
-            color: $appearblocktext;
-          }
-          img {
-            width: 80vw;
-            height: auto;
-          }
-        }
-        .spot-btn {
-          width: 80%;
-          display: flex;
-          justify-content: space-between;
-          .like-btn {
-            color: white;
-            border: none;
-            background: none;
-          }
-          .see-more {
-            color: white;
-            border: none;
-            background: none;
+          .spot-btn {
+            width: 50%;
+            padding: 20px;
             display: flex;
-            &::before {
-              content: "";
-              display: block;
-              background-color: white;
-
-              height: 20px;
-              width: 1px;
-              margin-right: 20px;
+            justify-content: space-between;
+            position: relative;
+            .like-btn {
+              color: white;
+              border: none;
+              background: none;
             }
+            .see-more {
+              color: white;
+              border: none;
+              background: none;
+              display: flex;
+              &::before {
+                content: "";
+                display: block;
+                background-color: white;
+
+                height: 20px;
+                width: 1px;
+                margin-right: 20px;
+              }
+            }
+            &::after {
+            content: "";
+            position: absolute;
+            width: 0.25em;
+            height: 0.25em;
+            border-radius: 50%;
+            background: rgb(255, 255, 255);
+            bottom:3vw;
+            left: 18vw;
+            margin-bottom: -0.5em;
+            transform: translateX(-50%);
+            filter: drop-shadow(0.5em 0px 0px white) drop-shadow(-0.5em 0px 0px white);
+          }
+          }
+        }
+      }
+    }
+    .get-ticket {
+        
+      width: 100vw;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      margin-top: 30px;
+      .get-ticket-box-shadow {
+        box-shadow: 0px 0px 13px -5px white;
+      }
+      .get-ticket-btn {
+          cursor: pointer;
+        background-color: $maincolor;
+        width: 30vw;
+        color: $appearblockcolor;
+        font-size: 1.2em;
+        font-weight: bold;
+        padding: 20px 20px;
+        border-radius: 5px 5px 0 0;
+        border: none;
+      }
+      .payment-type {
+        height: 30px;
+        width: 30vw;
+        border-radius: 0 0 5px 5px;
+        background-color: $appearblockcolor;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        i {
+          color: grey;
+          padding: 20px;
+        }
+        p {
+          color: white;
+          padding: 20px;
+          span {
+            color: $maincolor;
           }
         }
       }
     }
   }
-  .get-ticket {
-
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    .get-ticket-box-shadow {
-      box-shadow: 0px 0px 13px -5px white;
-    }
-    .get-ticket-btn {
-      background-color: $maincolor;
-      width: 30vw;
-      color: $appearblockcolor;
-      font-size: 1.2em;
-      font-weight: bold;
-      padding: 20px 20px;
-      border-radius: 5px 5px 0 0;
-      border: none;
-    }
-    .payment-type {
-      height: 30px;
-      width: 28.3vw;
-      padding: 10px;
-      border-radius: 0 0 5px 5px;
-      background-color: $appearblockcolor;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      i {
-        color: grey;
-      }
-      p {
-        color: white;
-        span {
-          color: $maincolor;
-        }
-      }
-    }
-  }
-}
 }
 @media screen and (max-width: 768px) {
   main {
@@ -235,6 +260,33 @@ main {
               }
             }
           }
+        }
+      }
+    }
+    .activity-spot.min{
+      .activity-infos{
+        background-color: rgb(241, 241, 241);
+        .infos-title{
+          color:$textcolor;
+          &::after {
+            content: "";
+            position: absolute;
+            width: 0.25em;
+            height: 0.25em;
+            border-radius: 50%;
+            background: grey;
+            bottom: 0;
+            left: 90%;
+            margin-bottom: -0.5em;
+            transform: translateX(-50%);
+            filter: drop-shadow(0.5em 0px 0px grey) drop-shadow(-0.5em 0px 0px grey);
+          }
+        }
+        .infos-location{
+          color:$maincolor !important;
+        }
+        .image-spot, .infos-subtitle, .info-text{
+          display:none;
         }
       }
     }
