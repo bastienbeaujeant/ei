@@ -1,0 +1,358 @@
+@media screen and (min-width: 768px) {
+  body {
+    font-family: "Montserrat", Arial;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+
+    header {
+      h1 {
+        margin: 0px;
+      }
+      .invisible {
+        display: none;
+      }
+      .logo-kazan {
+        width: 20vw;
+        margin: 30px;
+        margin-top: 10px;
+        height: auto;
+        position: absolute;
+        z-index: 1;
+      }
+
+      .header-menu {
+        transform: translateX(0vw);
+        height: 10vh;
+        width: 100vw;
+        position: absolute;
+        top: 0;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        animation: transform 1s ease;
+        .search-container {
+          order: 1;
+          position: relative;
+          width: 10vw;
+          top: 1vh;
+          .search-form {
+            .search-input {
+              background-color: $maincolor;
+              color: $appearblockcolor;
+              border: none;
+              background: none;
+            }
+            .search-btn {
+              background: none;
+              border: none;
+              color: $navcolor;
+              font-size: 1.5em;
+            }
+          }
+        }
+        .header-menu-ul {
+          order: -1;
+          width: 40%;
+          padding: 0;
+          margin: 50px;
+          display: flex;
+          justify-content: flex-end;
+          .header-menu-li {
+            list-style-type: none;
+            margin-top: 1vh;
+            a {
+              width: 5em;
+              text-decoration: none;
+              font-size: 1em;
+              font-weight: bold;
+              padding: 0 1em;
+              color: $navcolor;
+            }
+          }
+        }
+      }
+      .header-infos {
+        height: 50vh;
+        background-image: linear-gradient(#04444d91, #1f02559d),
+          url(/content/images/header.jpg);
+        background-size: auto, auto 50vh;
+        background-repeat: no-repeat;
+        background-position-x: 85%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .image-header {
+          width: auto;
+          height: 50vh;
+          top: 0;
+        }
+        .header-title {
+          margin-top: 30vh;
+          color: $maincolor;
+          font-size: 4em;
+          font-weight: lighter;
+        }
+        .header-subtitle {
+          color: $maincolor;
+          margin-top: 0;
+          font-size: 2em;
+          font-weight: lighter;
+        }
+        .header-hat {
+          display: none;
+        }
+        .schedule {
+          margin: 10px;
+          margin-top: 30px;
+          padding: 20px 60px;
+          background-color: $maincolor;
+          font-size: 1.2em;
+          font-weight: bold;
+          text-transform: uppercase;
+          border: none;
+          border-radius: 50px;
+          color: white;
+          box-shadow: 0px 0px 13px -2px rgb(63, 63, 63);
+        }
+      }
+    }
+  }
+  .noscroll {
+    overflow: hidden;
+  }
+}
+@media screen and (max-width: 768px) {
+  body {
+    font-family: "Montserrat", Arial;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+
+    header {
+      h1 {
+        margin: 0px;
+      }
+      .invisible {
+        display: none;
+      }
+      .logo-kazan {
+        width: 50vw;
+        margin: 30px;
+        margin-top: 10px;
+        height: auto;
+        position: absolute;
+        z-index: 1;
+      }
+
+      .burger-menu {
+        position: absolute;
+        top: 20px;
+        left: 70vw;
+        height: 20vh;
+        width: 20vw;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-end;
+
+        span {
+          display: block;
+          width: 40px;
+          height: 5px;
+          margin-top: 10px;
+          background-color: $maincolor;
+          transform: rotate(0deg);
+          transition: 0.5s ease-in-out;
+          cursor: pointer;
+        }
+        .span-top {
+          width: 35px;
+          transform-origin: right center;
+        }
+        .span-middle {
+          transform-origin: right center;
+        }
+        .span-bottom {
+          width: 20px;
+          transform-origin: right center;
+        }
+
+        .span-top.open {
+          background-color: $appeartext;
+          transform: rotate(-45deg);
+          width: 40px;
+          top: -3px;
+          left: 8px;
+        }
+        .span-middle.open {
+          background-color: $appeartext;
+          width: 0%;
+          opacity: 0;
+        }
+
+        .span-bottom.open {
+          background-color: $appeartext;
+          transform: rotate(45deg);
+          width: 40px;
+          top: 39px;
+          left: 8px;
+        }
+      }
+      .fixed {
+        position: fixed;
+      }
+      .header-menu.none {
+        transform: translateX(100vw);
+        animation-duration: 1s;
+        z-index: 200;
+        height: 100vh;
+        width: 100vw;
+        position: fixed;
+        top: 0;
+        background-color: $maincolor;
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+        .search-container {
+          align-self: flex-start;
+          position: fixed;
+          width: 60vw;
+          top: 65vh;
+          .search-form {
+            .search-input {
+              background-color: $maincolor;
+              color: $appearblockcolor;
+              border: none;
+              background: none;
+            }
+            .search-btn {
+              background: none;
+              border: none;
+              color: $appearblockcolor;
+              font-size: 1.5em;
+            }
+          }
+        }
+        .header-menu-ul {
+          padding: 0;
+          margin: 50px;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-end;
+          .header-menu-li {
+            list-style-type: none;
+            margin-top: 1vh;
+            a {
+              text-decoration: none;
+              font-size: 2em;
+              font-weight: bold;
+              color: $appearblockcolor;
+            }
+          }
+        }
+      }
+      .header-menu {
+        transform: translateX(0vw);
+        height: 100vh;
+        width: 100vw;
+        position: fixed;
+        top: 0;
+        background-color: $maincolor;
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+        animation: transform 1s ease;
+        .search-container {
+          align-self: flex-start;
+          position: fixed;
+          width: 60vw;
+          top: 65vh;
+          .search-form {
+            .search-input {
+              background-color: $maincolor;
+              color: $appearblockcolor;
+              border: none;
+              background: none;
+            }
+            .search-btn {
+              background: none;
+              border: none;
+              color: $appearblockcolor;
+              font-size: 1.5em;
+            }
+          }
+        }
+        .header-menu-ul {
+          padding: 0;
+          margin: 50px;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-end;
+          .header-menu-li {
+            list-style-type: none;
+            margin-top: 1vh;
+            a {
+              text-decoration: none;
+              font-size: 2em;
+              font-weight: bold;
+              color: $appearblockcolor;
+            }
+          }
+        }
+      }
+      .header-infos {
+        height: 100vh;
+        background-image: linear-gradient(#04444d91, #1f02559d),
+          url(/content/images/header.jpg);
+        background-size: auto, auto 50vh;
+        background-repeat: no-repeat;
+        background-position-x: 85%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .image-header {
+          width: auto;
+          height: 50vh;
+          top: 0;
+        }
+        .header-title {
+          margin-top: 50vh;
+          color: $maincolor;
+          font-size: 4em;
+          font-weight: lighter;
+        }
+        .header-subtitle {
+          color: $maincolor;
+          margin-top: 0;
+          font-size: 2em;
+          font-weight: lighter;
+        }
+        .header-hat {
+          display: none;
+        }
+        .schedule {
+          margin: 10px;
+          margin-top: 30px;
+          padding: 20px 60px;
+          background-color: $maincolor;
+          font-size: 1.2em;
+          font-weight: bold;
+          text-transform: uppercase;
+          border: none;
+          border-radius: 50px;
+          color: white;
+          box-shadow: 0px 0px 13px -2px rgb(63, 63, 63);
+        }
+      }
+    }
+  }
+  .noscroll {
+    overflow: hidden;
+  }
+}

@@ -1,79 +1,89 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      property="og:title"
-      content="Guide touristique de la ville de Kazan"
-    />
-    <meta property="og:type" content="article" />
-    <meta
-      property="og:description"
-      content="The ultimate competition dedicated for any manuals and technologicals skills, loves and works just for
-    fun, for their work or just exchanging their passion with others…"
-    />
-    <meta property="og:image" content="\content\images\kazan-night.jpg" />
-    <title>Accueil - KAZAN Smartcity</title>
-  </head>
 
-  <body>
-    <header>
-      <div class="burger-menu">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-      <img src="" alt="" class="logo-kazan" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/styles/style.css">
+  <meta property="og:title" content="Guide touristique de la ville de Kazan" />
+  <meta property="og:type" content="article" />
+  <meta property="og:description" content="The ultimate competition dedicated for any manuals and technologicals skills, loves and works just for
+    fun, for their work or just exchanging their passion with others…" />
+  <meta property="og:image" content="\content\images\kazan-night.jpg" />
+  <title>Accueil - KAZAN Smartcity</title>
+</head>
 
-      <nav>
-        <ul>
-            <li class="header-menu-li-1"><a href="/index.html">Visits</a></li>
-            <li class="header-menu-li-2"><a href="/contact.html">Contact</a></li>
-            <li class="header-menu-li-3"><a href="#">History</a></li>
-            <li class="header-menu-li-4"><a href="#">Get Tickets</a></li>
-        </ul>
-      </nav>
+<body>
+  <header>
+    <img src="/content/images/logo_kazan.png" alt="logo kazan city" class="logo-kazan" />
+    <h1><span class="invisible">Kazan Site Web travel tour</span></h1>
+    <div class="burger-menu">
+      <span class="span-top"> </span>
+      <span class="span-middle"> </span>
+      <span class="span-bottom"> </span>
+    </div>
+
+    <nav class="header-menu none">
       <div class="search-container">
-        <form action="/action_page.php">
-          <input type="text" placeholder="Search.." name="search" />
-          <button type="submit"><i class="fa fa-search"></i></button>
+        <form action="/action_page.php" class="search-form">
+          <input type="search" placeholder="Entrez votre recherche" name="search" class="search-input invisible" />
+          <button type="submit" class="search-btn">
+            <i class="fa fa-search"></i>
+          </button>
         </form>
       </div>
-      <article class="header-infos">
-        <h1>August</h1>
-        <h2>22 >27</h2>
-        <p>
-          The ultimate competition dedicated for any manuals and technologicals
-          skills, loves and works just for fun, for their work or just
-          exchanging their passion with others…
-        </p>
-      </article>
+      <ul class="header-menu-ul">
+        <li class="header-menu-li"><a href="/index.html">Visits</a></li>
+        <li class="header-menu-li"><a href="/contact.html">Contact</a></li>
+        <li class="header-menu-li"><a href="#">History</a></li>
+        <li class="header-menu-li"><a href="#">Get Tickets</a></li>
+      </ul>
+    </nav>
+
+    <div class="header-infos">
+      <h1 class="header-title">22 > 27</h1>
+      <h2 class="header-subtitle">August</h2>
+      <p class="header-hat">
+        The ultimate competition dedicated for any manuals and technologicals
+        skills, loves and works just for fun, for their work or just
+        exchanging their passion with others…
+      </p>
       <button class="schedule">See schedule</button>
-    </header>
-    <main></main>
-    <footer>
-      <section class="footer-section">
+    </div>
+  </header>
+  <main></main>
+  <footer>
+    <section class="footer-section">
+      <div class="footer-head">
+        <img src="/content/images/pin.svg" alt="pin location logo" class="pin-location-logo" />
         <h2 class="footer-title">TatarStan Toursim</h2>
-        <h3 class="footer-subtitle">
-          Ulitsa Maksima Gor'kogo, 19, Kazan, 420015
-        </h3>
-        <p class="footer-text">
-          Kazan (en russe, Казань ; en tatar : Казан) est une ville de Russie et
-          la capitale de la république du Tatarstan, une des subdivisions de la
-          Russie. Sa population s'élevait à 1 231 878 habitants en 2017 ce qui
-          en fait la sixième ville de Russie.
-        </p>
-        <p>Visit Tatarstan +7 843-206-00-14 (speaker’s support)</p>
-        <article class="rs">
-          <p class="follow-us">Follow US</p>
-          <i class="hashtag-logo"></i>
+      </div>
+      <h3 class="footer-subtitle">
+        Ulitsa Maksima Gor'kogo, 19, Kazan, 420015
+      </h3>
+      <p class="footer-text">
+        Kazan (en russe, Казань ; en tatar : Казан) est une ville de Russie et
+        la capitale de la république du Tatarstan, une des subdivisions de la
+        Russie. Sa population s'élevait à 1 231 878 habitants en 2017 ce qui
+        en fait la sixième ville de Russie.
+      </p>
+      <p class="visit-tatarstan">Visit Tatarstan</p>
+      <p class="footer-tel-numb">+7 843-206-00-14</p>
+      <p class="footer-speaker-support">(speaker’s support)</p>
+      <img src="/content/images/kazan-night.jpg" alt="Photo de Kazan by night" class="kazan-night" />
+      <section class="rs">
+        <h2 class="follow-us">Follow US</h2>
+        <div class="rs-links">
+          <i class="fab fa-slack-hash"></i>
           <p class="hashtag-text">#kazan2019</p>
-          <i class="twitter-logo"></i>
+          <i class="fab fa-twitter"></i>
           <p class="twitter-text">@kazan2019</p>
-        </article>
-        <img src="" alt="" class="kazan-night" />
+        </div>
       </section>
-    </footer>
-  </body>
+      <img src="/content/images/startechs.png" alt="Photo partenaire startech" class="logo-partner" />
+    </section>
+  </footer>
+  <script src="main.js"></script>
+</body>
+
 </html>

@@ -1,0 +1,282 @@
+@media screen and (min-width: 768px) {
+main {
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+
+  .que-faire {
+      margin-top: 6vh;
+    text-align: center;
+    color: $maincolor;
+    font-weight: bold;
+  }
+  .activity-list {
+    margin: 0;
+    padding: 0px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    .activity-spot {
+      width: 20vw;
+      margin: 1vw;
+      list-style-type: none;
+      .activity-infos {
+        background-color: $appearblockcolor;
+        padding: 20px;
+        margin: 0;
+        a {
+          text-decoration: none;
+          h2,
+          p {
+            color: white;
+          }
+          .infos-title {
+            display: flex;
+            flex-direction: column;
+            
+            position: relative;
+            &::after {
+              content: "";
+              position: absolute;
+              width: 0.25em;
+              height: 0.25em;
+              border-radius: 50%;
+              background: rgb(255, 255, 255);
+              bottom: 0;
+              left: 90%;
+              margin-bottom: -0.5em;
+              transform: translateX(-50%);
+              filter: drop-shadow(0.5em 0px 0px) drop-shadow(-0.5em 0px 0px);
+            }
+            span {
+              font-family: "Museo300-Regular", serif;
+              font-weight: lighter;
+              line-height: 0.5;
+            }
+          }
+          .image-spot {
+            height: 90%;
+            width: 90%;
+          }
+          .infos-location {
+            font-weight: lighter;
+          }
+          .infos-location,
+          .infos-subtitle {
+            color: $appearblocktext;
+          }
+          img {
+            width: 80vw;
+            height: auto;
+          }
+        }
+        .spot-btn {
+          width: 80%;
+          display: flex;
+          justify-content: space-between;
+          .like-btn {
+            color: white;
+            border: none;
+            background: none;
+          }
+          .see-more {
+            color: white;
+            border: none;
+            background: none;
+            display: flex;
+            &::before {
+              content: "";
+              display: block;
+              background-color: white;
+
+              height: 20px;
+              width: 1px;
+              margin-right: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .get-ticket {
+
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    .get-ticket-box-shadow {
+      box-shadow: 0px 0px 13px -5px white;
+    }
+    .get-ticket-btn {
+      background-color: $maincolor;
+      width: 30vw;
+      color: $appearblockcolor;
+      font-size: 1.2em;
+      font-weight: bold;
+      padding: 20px 20px;
+      border-radius: 5px 5px 0 0;
+      border: none;
+    }
+    .payment-type {
+      height: 30px;
+      width: 28.3vw;
+      padding: 10px;
+      border-radius: 0 0 5px 5px;
+      background-color: $appearblockcolor;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      i {
+        color: grey;
+      }
+      p {
+        color: white;
+        span {
+          color: $maincolor;
+        }
+      }
+    }
+  }
+}
+}
+@media screen and (max-width: 768px) {
+  main {
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+
+    .que-faire {
+      text-align: center;
+      color: $maincolor;
+      font-weight: bold;
+    }
+    .activity-list {
+      margin: 0;
+      padding: 0px;
+      width: 90vw;
+      .activity-spot {
+        width: 90vw;
+        margin: 5vw;
+        list-style-type: none;
+        .activity-infos {
+          background-color: $appearblockcolor;
+          padding: 20px;
+          margin: 0;
+          a {
+            text-decoration: none;
+            h2,
+            p {
+              color: white;
+            }
+            .infos-title {
+              display: flex;
+              flex-direction: column;
+              position: relative;
+              &::after {
+                content: "";
+                position: absolute;
+                width: 0.25em;
+                height: 0.25em;
+                border-radius: 50%;
+                background: rgb(255, 255, 255);
+                bottom: 0;
+                left: 90%;
+                margin-bottom: -0.5em;
+                transform: translateX(-50%);
+                filter: drop-shadow(0.5em 0px 0px) drop-shadow(-0.5em 0px 0px);
+              }
+              span {
+                font-family: "Museo300-Regular", serif;
+                font-weight: lighter;
+                line-height: 0.5;
+              }
+            }
+            .image-spot {
+              height: 80vw;
+              width: 80vw;
+            }
+            .infos-location {
+              font-weight: lighter;
+            }
+            .infos-location,
+            .infos-subtitle {
+              color: $appearblocktext;
+            }
+            img {
+              width: 80vw;
+              height: auto;
+            }
+          }
+          .spot-btn {
+            width: 80%;
+            display: flex;
+            justify-content: space-between;
+            .like-btn {
+              color: white;
+              border: none;
+              background: none;
+            }
+            .see-more {
+              color: white;
+              border: none;
+              background: none;
+              display: flex;
+              &::before {
+                content: "";
+                display: block;
+                background-color: white;
+
+                height: 20px;
+                width: 1px;
+                margin-right: 20px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .get-ticket {
+      width: 100vw;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      .get-ticket-box-shadow {
+        box-shadow: 0px 0px 13px -5px white;
+      }
+      .get-ticket-btn {
+        background-color: $maincolor;
+        width: 55vw;
+        color: $appearblockcolor;
+        font-size: 1.2em;
+        font-weight: bold;
+        padding: 20px 20px;
+        border-radius: 5px 5px 0 0;
+        border: none;
+      }
+      .payment-type {
+        height: 30px;
+        width: 50vw;
+        padding: 10px;
+        border-radius: 0 0 5px 5px;
+        background-color: $appearblockcolor;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        i {
+          color: grey;
+        }
+        p {
+          color: white;
+          span {
+            color: $maincolor;
+          }
+        }
+      }
+    }
+  }
+}
