@@ -1,0 +1,25 @@
+$maincolor: #00d8ff;
+$textcolor: #737b80;
+$navcolor: #f297b1;
+$headertext: #d6d6d6;
+$appearblocktext: #d4ce9a;
+$appearblocktitle: #f899b4;
+$appearblockcolor: #2d3a42;
+$appeartext: #284e68;
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../content/fonts/Montserrat/Montserrat-Medium.ttf");
+}
+@font-face {
+  font-family: "Museo300-Regular";
+  src: url("../content/fonts/museo/Museo300-Regular.otf");
+}
+@font-face {
+  font-family: "Marven";
+  src: url("../content/fonts/maven-pro/MavenPro-Medium.ttf");
+}
+@import "header";
+@import "main";
+@import "footer";
+@import "form";

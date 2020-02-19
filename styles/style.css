@@ -384,7 +384,6 @@
     transition: .5s ease;
   }
   body .header .header-menu .search-container .search-form .search-input-white {
-    margin: 0;
     width: 80vw;
     background-color: white;
     padding: 3vw;
@@ -904,6 +903,7 @@
             justify-content: space-between;
   }
   main .activity-list .activity-spot .activity-infos .spot-btn .like-btn {
+    outline: none;
     color: white;
     border: none;
     background: none;
@@ -950,7 +950,7 @@
   }
   main .activity-spot.min .activity-infos .image-spot,
   main .activity-spot.min .activity-infos .infos-subtitle,
-  main .activity-spot.min .activity-infos .info-text {
+  main .activity-spot.min .activity-infos .info-text, main .activity-spot.min .activity-infos .spot-btn {
     display: none;
   }
   main .get-ticket {
@@ -1283,9 +1283,8 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
   .footer-contact .form .form-fieldset label {
     width: 80%;
@@ -1300,8 +1299,8 @@
     font-size: 0.8rem;
     -webkit-transform: translateY(-2vw);
             transform: translateY(-2vw);
-    -webkit-transition: 1s ease;
-    transition: 1s ease;
+    -webkit-transition: .2s ease;
+    transition: .2s ease;
   }
   .footer-contact .form .form-fieldset input {
     width: 100%;
@@ -1318,6 +1317,7 @@
     width: 100%;
     background: none;
     color: white;
+    border: 1px solid white;
   }
   .footer-contact .form .form-fieldset .submit-btn {
     width: 100%;

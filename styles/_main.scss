@@ -341,6 +341,7 @@
             display: flex;
             justify-content: space-between;
             .like-btn {
+              outline: none;
               color: white;
               border: none;
               background: none;
@@ -389,7 +390,7 @@
         }
         .image-spot,
         .infos-subtitle,
-        .info-text {
+        .info-text, .spot-btn {
           display: none;
         }
       }

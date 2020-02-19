@@ -9,6 +9,7 @@ let localization = document.querySelectorAll(".infos-location");
 let monumentStyle = document.querySelectorAll(".infos-subtitle");
 let minLabel = document.querySelectorAll(".label-contact");
 let contactInput = document.querySelectorAll(".input-contact");
+let favbutton = document.querySelectorAll(".like-btn")
 //ouverture du menu
 burgerMenu.addEventListener("click", function() {
   burgerMenu.classList.toggle("fixed");
@@ -63,7 +64,7 @@ localization.forEach(element => {
     element.classList.add("out");
   }
 });
-
+//Rajoute la classe de localisation pour la couleur de chaques activités
 monumentStyle.forEach(element => {
   if (element.classList.contains("center")) {
     element.classList.add("center");
@@ -71,7 +72,7 @@ monumentStyle.forEach(element => {
     element.classList.add("out");
   }
 });
-
+//Garde la barre bleue lorqu'on tape dans cet input
 contactInput.forEach(element => {
   element.addEventListener("keyup", function() {
     if (element.value == "") {
@@ -80,7 +81,7 @@ contactInput.forEach(element => {
       element.classList.add("input-writted");
     }
   });
-
+//Hover sur les activités du desktop
   element.addEventListener("mouseenter", function() {
     let id = element.dataset.id;
     console.log(id);
@@ -91,4 +92,17 @@ contactInput.forEach(element => {
     console.log(id);
     minLabel[id].classList.toggle("label-min");
   });
+});
+//Changement de classe pour le bouton favoris <3
+favbutton.forEach(element => {
+  element.addEventListener("click", function(){
+
+      if(this.childNodes[0].classList == "far fa-heart"){
+        this.childNodes[0].classList.add("fas") + ("fa-heart")
+      }
+      else{
+        this.childNodes[0].classList.remove("fas") + (" fa-heart")
+      }
+  })
+
 });
