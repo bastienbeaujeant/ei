@@ -100,7 +100,9 @@
               }
             }
             .image-spot {
-              display: none;
+              height: 0vw;
+              order:-1;
+              transition: .2s ease;
             }
             .infos-location {
               display: none;
@@ -203,7 +205,7 @@
               display: block;
               height: 22vw;
               width: 22vw;
-              order: -1;
+              order:-1;
             }
             .infos-location {
               display: block;
@@ -326,6 +328,7 @@
             .image-spot {
               height: 80vw;
               width: 80vw;
+              transition: .5s ease;
             }
             .infos-location {
               font-weight: lighter;
@@ -388,7 +391,9 @@
         .infos-location {
           color: $maincolor !important;
         }
-        .image-spot,
+        .image-spot{
+          height:0vh !important;
+        }
         .infos-subtitle,
         .info-text, .spot-btn {
           display: none;

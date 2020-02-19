@@ -25,7 +25,7 @@ searchIcon.addEventListener("click", function() {
   searchInput.classList.toggle("search-input-white");
   menu.classList.toggle("pink-menu");
 });
-//noscroll du menu suyr le reste de la page
+//noscroll du menu sur le reste de la page
 burgerMenu.addEventListener("click", function() {
   event.preventDefault();
   if (body.classList.contains("noscroll")) {
@@ -55,7 +55,14 @@ slider.forEach(element => {
     element.classList.add("min");
   });
 });
-
+//Rajoute la classe de localisation pour la couleur de chaques activités au like
+favbutton.forEach(element => {
+  if (element.childNodes[0].classList.contains("center")) {
+    element.childNodes[0].classList.add("center");
+  } else {
+    element.childNodes[0].classList.add("out");
+  }
+});
 //Rajoute la classe de localisation pour la couleur de chaques activités
 localization.forEach(element => {
   if (element.classList.contains("center")) {
