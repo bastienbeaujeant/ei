@@ -7,13 +7,13 @@
   <meta name="title" content="Kazan - The ultimate competition of WorldSkills" />
   <meta name="description"
     content="The ultimate competition dedicated for any manuals and technologicals skills, loves and works just for fun, for their work or just exchanging their passion with others…" />
- 
+
   <meta property="og:title" content="Guide touristique de la ville de Kazan" />
   <meta property="og:type" content="article" />
   <meta property="og:description" content="The ultimate competition dedicated for any manuals and technologicals skills, loves and works just for
     fun, for their work or just exchanging their passion with others…" />
   <meta property="og:image" content="\content\images\kazan-night.jpg" />
-   <link rel="icon" type="image/png" href="/content/images/icone.png" />
+  <link rel="icon" type="image/png" href="/content/images/icone.png" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" />
   <link rel="stylesheet" href="styles/style.css" />
   <title>Contact - KAZAN Smartcity</title>
@@ -57,31 +57,30 @@
       <button class="schedule">See schedule</button>
     </div>
   </header>
-  <main></main>
-  <footer>
-    <h2>Grouping Form Data with Fieldset</h2>
+  <main class="main-contact"></main>
+  <footer class="footer-contact">
 
-    <p>The fieldset element is used to group related data in a form, and the legend element defines a caption for the
-      fieldset element.</p>
 
     <form action="/action_page.php" class="form">
+      <h2 class="h2-conctact">Contact</h2>
+
+      <p class="p-conctact">Besoin d'un contact ?</p>
       <fieldset class="form-fieldset">
-        <legend>Personalia:</legend>
-        <label for="fname">Prénom</label><br>
-        <input type="text" id="fname" name="fname" value=""><br>
-        <label for="lname">Nom</label><br>
-        <input type="text" id="lname" name="lname" value=""><br><br>
-        <label for="fname">Email</label><br>
-        <input type="mail" id="fname" name="fname" value=""><br>
-        <label for="fname">Objet</label><br>
-        <input type="text" id="fname" name="fname" value=""><br>
-        <label for="fname">Message</label><br>
-        <input type="text" id="fname" name="fname" value=""><br>
-        <input type="submit" value="Submit">
+        <label for="fname" class="label-contact">Prénom</label>
+        <input data-id="0" type="text" id="fname" name="fname" value="" class="input-contact" required>
+        <label for="lname" class="label-contact">Nom</label>
+        <input data-id="1" type="text" id="lname" name="lname" value="" class="input-contact" required>
+        <label for="fname" class="label-contact">Email</label><br>
+        <input data-id="2" type="mail" id="email" name="fname" value="" class="input-contact" required>
+        <label for="fname" class="label-contact">Objet</label><br>
+        <input data-id="3" type="text" id="objet" name="fname" value="" class="input-contact" required>
+        <label for="fname" class="label-contact label-min">Message</label><br>
+        <textarea id="textarea-contact" rows="8" cols="50" required></textarea>
+        <input type="submit" value="Enjoy" class="submit-btn">
       </fieldset>
     </form>
     <script src="main.js"></script>
-    </footer>
+  </footer>
 </body>
 
 </html>

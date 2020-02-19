@@ -35,7 +35,6 @@
           order: 1;
           position: relative;
           width: 10vw;
-          top: 1vh;
           .search-form {
             .search-input {
               background-color: $maincolor;
@@ -303,11 +302,10 @@
               border: none;
               background: none;
               width: 0vw;
-              transform: scaleX(0);
               transition: .5s ease;
             }
             .search-input-white{
-              transform: scaleX(1);
+              margin:0;
               width: 80vw;
               background-color: white;
               padding: 3vw;
@@ -316,7 +314,6 @@
             .search-btn {
               align-self: center;
               position: absolute;
-              
               background: none;
               border: none;
               color: $appearblockcolor;

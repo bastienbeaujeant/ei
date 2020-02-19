@@ -7,6 +7,8 @@ let body = document.querySelector("body");
 let slider = document.querySelectorAll(".activity-spot");
 let localization = document.querySelectorAll(".infos-location");
 let monumentStyle = document.querySelectorAll(".infos-subtitle");
+let minLabel = document.querySelectorAll(".label-contact");
+let contactInput = document.querySelectorAll(".input-contact");
 //ouverture du menu
 burgerMenu.addEventListener("click", function() {
   burgerMenu.classList.toggle("fixed");
@@ -21,7 +23,6 @@ searchIcon.addEventListener("click", function() {
   searchInput.classList.toggle("invisible");
   searchInput.classList.toggle("search-input-white");
   menu.classList.toggle("pink-menu");
-
 });
 //noscroll du menu suyr le reste de la page
 burgerMenu.addEventListener("click", function() {
@@ -32,19 +33,21 @@ burgerMenu.addEventListener("click", function() {
     body.classList.add("noscroll");
   }
 });
-//
+//Change la classe pour l'activité et devrait l'animer en mobile
 slider.forEach(element => {
   element.addEventListener("click", function() {
     event.preventDefault();
     element.classList.remove("toggle");
   });
 });
+//Ajoute la classe pour l'activité en hover et devrait l'animer en desktop
 slider.forEach(element => {
   element.addEventListener("mouseover", function() {
     event.preventDefault();
     element.classList.remove("min");
   });
 });
+//Retire la classe pour l'activité en hover et devrait l'animer en desktop
 slider.forEach(element => {
   element.addEventListener("mouseout", function() {
     event.preventDefault();
@@ -52,22 +55,40 @@ slider.forEach(element => {
   });
 });
 
-
+//Rajoute la classe de localisation pour la couleur de chaques activités
 localization.forEach(element => {
-  if(element.classList.contains("center")){
-  element.classList.add("center")
-  }
-  else{
-    element.classList.add("out")
+  if (element.classList.contains("center")) {
+    element.classList.add("center");
+  } else {
+    element.classList.add("out");
   }
 });
 
 monumentStyle.forEach(element => {
-  if(element.classList.contains("center")){
-  element.classList.add("center")
-  }
-  else{
-    element.classList.add("out")
+  if (element.classList.contains("center")) {
+    element.classList.add("center");
+  } else {
+    element.classList.add("out");
   }
 });
 
+contactInput.forEach(element => {
+  element.addEventListener("keyup", function() {
+    if (element.value == "") {
+      element.classList.remove("input-writted");
+    } else {
+      element.classList.add("input-writted");
+    }
+  });
+
+  element.addEventListener("mouseenter", function() {
+    let id = element.dataset.id;
+    console.log(id);
+    minLabel[id].classList.toggle("label-min");
+  });
+  element.addEventListener("mouseout", function() {
+    let id = element.dataset.id;
+    console.log(id);
+    minLabel[id].classList.toggle("label-min");
+  });
+});
