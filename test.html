@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="title" content="Kazan - The ultimate competition of WorldSkills" />
+    <meta name="description"
+        content="The ultimate competition dedicated for any manuals and technologicals skills, loves and works just for fun, for their work or just exchanging their passion with others…" />
+    <!--Balise OpenGraph-->
+    <meta property="og:title" content="Guide touristique de la ville de Kazan" />
+    <meta property="og:type" content="article" />
+    <meta property="og:description" content="The ultimate competition dedicated for any manuals and technologicals skills, loves and works just for
+    fun, for their work or just exchanging their passion with others…" />
+    <meta property="og:image" content="\content\images\kazan-night.jpg" />
+    <!--Lien de style-->
+    <link rel="icon" type="image/png" href="/content/images/icone.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <title>Accueil - KAZAN Smartcity</title>
+</head>
+
+<body>
+    <!--Début du header-->
+    <header class="header">
+        <img src="/content/images/logo_kazan.png" alt="logo kazan city" class="logo-kazan" />
+        <h1><span class="invisible">Kazan Site Web travel tour</span></h1>
+        <div class="burger-menu">
+            <span class="span-top"> </span>
+            <span class="span-middle"> </span>
+            <span class="span-bottom"> </span>
+        </div>
+        <!--Début dumenu de navigation-->
+        <nav class="header-menu none">
+            <div class="search-container">
+                <form action="/action_page.php" class="search-form">
+                    <input type="search" placeholder="Entrez votre recherche" name="search"
+                        class="search-input invisible" />
+                    <button type="submit" class="search-btn">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </form>
+            </div>
+            <ul class="header-menu-ul">
+                <li class="header-menu-li"><a href="#"></a></li>
+                <li class="header-menu-li"><a href="/index.html">Visits</a></li>
+                <li class="header-menu-li"><a href="/contact.html">Contact</a></li>
+                <li class="header-menu-li"><a href="#">History</a></li>
+                <li class="header-menu-li"><a href="#">Get Tickets</a></li>
+            </ul>
+        </nav>
+        <!-- Fin du menu de navigation -->
+        <!--Début des infos dans le header-->
+        <div class="header-infos">
+            <h1 class="header-title">22 > 27</h1>
+            <h2 class="header-subtitle">August</h2>
+            <p class="header-hat">
+                The ultimate competition dedicated for any manuals and technologicals
+                skills, loves and works just for fun, for their work or just
+                exchanging their passion with others…
+            </p>
+            <button class="schedule">See schedule</button>
+        </div>
+    </header>
+    <!--Fin du header-->
+    <!--Début du main-->
+    <main>
+        <!--Titre du main-->
+        <h2 class="que-faire">Que faire à Kazan ?</h2>
+        <!--Liste modulaire des activités-->
+        <ul class="activity-list"></ul>
+        <div class="get-ticket">
+            <div class="get-ticket-box-shadow">
+                <button class="get-ticket-btn">GET TICKET</button>
+                <div class="payment-type">
+                    <i class="fas fa-credit-card"></i>
+                    <i class="fab fa-paypal"></i>
+                    <p>₽2600 <span>RUR</span></p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <section class="footer-section">
+            <!--conteneur des textes-->
+            <div class="footer-explain">
+                <div class="footer-head">
+                    <img src="/content/images/pin.svg" alt="pin location logo" class="pin-location-logo" />
+                    <h2 class="footer-title">TatarStan Toursim</h2>
+                </div>
+                <h3 class="footer-subtitle">
+                    Ulitsa Maksima Gor'kogo, 19, Kazan, 420015
+                </h3>
+                <p class="footer-text">
+                    Kazan (en russe, Казань ; en tatar : Казан) est une ville de Russie et
+                    la capitale de la république du Tatarstan, une des subdivisions de la
+                    Russie. Sa population s'élevait à 1 231 878 habitants en 2017 ce qui
+                    en fait la sixième ville de Russie.
+                </p>
+            </div>
+            <!--conteneur des contacts-->
+            <div class="footer-contact">
+                <p class="visit-tatarstan">Visit Tatarstan</p>
+                <p class="footer-tel-numb">+7 843-206-00-14</p>
+                <p class="footer-speaker-support">(speaker’s support)</p>
+            </div>
+            <img src="/content/images/kazan-night.jpg" alt="Photo de Kazan by night" class="kazan-night" />
+            <!--Conteneur des diff&érents réseaux sociaux-->
+            <section class="rs">
+                <h2 class="follow-us">Follow US</h2>
+                <div class="rs-links">
+                    <i class="fab fa-slack-hash"></i>
+                    <p class="hashtag-text">#kazan2019</p>
+                    <i class="fab fa-twitter"></i>
+                    <p class="twitter-text">@kazan2019</p>
+                </div>
+            </section>
+            <img src="/content/images/startechs.png" alt="Photo partenaire startech" class="logo-partner" />
+        </section>
+    </footer>
+    <!--Fin du footer-->
+    <!--Lancement des scripts JS-->
+    <script src="axios.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
+</body>
+
+</html>

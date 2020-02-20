@@ -56,10 +56,7 @@
     </div>
   </header>
   <!--Début du main contact-->
-  <main class="main-contact"></main>
-  <!--Fin du main contact-->
-  <!--Début du footer avec le formulaire de contact-->
-  <footer class="footer-contact">
+  <main class="main-contact">
     <!--Début du formulaire-->
     <form action="/action_page.php" class="form">
       <!--Titre du formulaire-->
@@ -67,22 +64,27 @@
       <p class="p-conctact">Besoin d'un contact ?</p>
       <!--Début des champs d'entrées-->
       <fieldset class="form-fieldset">
-        <label for="fname" class="label-contact">Prénom</label>
-        <input data-id="0" type="text" id="fname" name="fname" value="" class="input-contact" required>
-        <label for="lname" class="label-contact">Nom</label>
-        <input data-id="1" type="text" id="lname" name="lname" value="" class="input-contact" required>
-        <label for="fname" class="label-contact">Email</label><br>
-        <input data-id="2" type="mail" id="email" name="fname" value="" class="input-contact" required>
-        <label for="fname" class="label-contact">Objet</label><br>
-        <input data-id="3" type="text" id="objet" name="fname" value="" class="input-contact" required>
-        <label for="fname" class="label-contact label-min">Message</label><br>
-        <textarea id="textarea-contact" rows="8" cols="50" required></textarea>
-        <!--Bouton submit du formulaire-->
-        <input type="submit" value="Enjoy" class="submit-btn">
+      <label for="fname" class="label-contact">Prénom</label>
+      <input data-id="0" type="text" id="fname" name="fname" value="" class="input-contact" required>
+      <label for="lname" class="label-contact">Nom</label>
+      <input data-id="1" type="text" id="lname" name="lname" value="" class="input-contact" required>
+      <label for="email" class="label-contact">Email</label><br>
+      <input data-id="2" type="email" id="email" name="fname" value="" class="input-contact" required>
+      <label for="objet" class="label-contact">Objet</label><br>
+      <input data-id="3" type="text" id="objet" name="fname" value="" class="input-contact" required>
+      <label for="textarea-contact" class="label-contact label-min">Message</label><br>
+      <textarea id="textarea-contact" rows="8" cols="50" required></textarea>
+      <!--Bouton submit du formulaire-->
+      <input type="submit" value="Enjoy" class="submit-btn" disabled>
       </fieldset>
     </form>
     <!--Fin du formulaire-->
-    <script src="main.js"></script>
+  </main>
+  <!--Fin du main contact-->
+  <!--Début du footer avec le formulaire de contact-->
+  <footer class="footer-contact">
   </footer>
+  <script src="main.js"></script>
 </body>
+
 </html>

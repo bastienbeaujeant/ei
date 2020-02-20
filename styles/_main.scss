@@ -70,10 +70,10 @@
         list-style-type: none;
         overflow: hidden;
         .center {
-          color: $appearblocktext;
+          color: $appearblocktext !important;
         }
         .out{
-          color: $navcolor;
+          color: $navcolor !important;
         }
         //informations des activités
         .activity-infos {
@@ -287,11 +287,11 @@
     }
     //Classe contenant la modification par rapport à la localisation de l'activité
     .center {
-      color: $appearblocktext;
+      color: $appearblocktext !important;
     }
     //Classe contenant la modification par rapport à la localisation de l'activité
     .out{
-      color: $navcolor;
+      color: $navcolor !important;
     }
     //Classe contenant la liste des activités
     .activity-list {
