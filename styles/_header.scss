@@ -37,10 +37,16 @@
           order: 1;
           position: relative;
           width: 10vw;
+         &:focus{
+              background-color: white;
+           }
           .search-form {
+            display: flex;
+            
             .search-input {
               background-color: $maincolor;
               color: $appearblockcolor;
+              position: absolute;
               border: none;
               background: none;
             }
@@ -50,7 +56,9 @@
               border: none;
               color: $navcolor;
               font-size: 1.5em;
+              
             }
+
           }
         }
         //Liste contenant le menu
@@ -58,7 +66,7 @@
           order: -1;
           width: 40%;
           padding: 0;
-          margin: 50px;
+          margin: 1vh;
           display: flex;
           justify-content: flex-end;
           .header-menu-li {
@@ -297,12 +305,13 @@
         .search-container {
           position: fixed;
           width: 100vw;
-          top: 65vh;
+          top: 60vh;
           .search-form {
             display: flex;
-            align-items:center;
+
             justify-content: flex-end;
             margin-right: 10vw;
+
             position: relative;
             .search-input {
               background-color: $maincolor;
@@ -313,14 +322,14 @@
               transition: .5s ease;
             }
             .search-input-white{
-              width: 80vw;
+              width: 70vw;
               background-color: white;
               padding: 3vw;
               border-radius: 5px;
             }
             .search-btn {
               align-self: center;
-              position: absolute;
+
               background: none;
               border: none;
               color: $appearblockcolor;

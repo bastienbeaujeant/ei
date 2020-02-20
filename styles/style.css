@@ -60,9 +60,18 @@
     position: relative;
     width: 10vw;
   }
+  body .header .header-menu .search-container:focus {
+    background-color: white;
+  }
+  body .header .header-menu .search-container .search-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
   body .header .header-menu .search-container .search-form .search-input {
     background-color: #00d8ff;
     color: #2d3a42;
+    position: absolute;
     border: none;
     background: none;
   }
@@ -79,7 +88,7 @@
             order: -1;
     width: 40%;
     padding: 0;
-    margin: 50px;
+    margin: 1vh;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -356,15 +365,12 @@
   body .header .header-menu .search-container {
     position: fixed;
     width: 100vw;
-    top: 65vh;
+    top: 60vh;
   }
   body .header .header-menu .search-container .search-form {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
@@ -381,7 +387,7 @@
     transition: .5s ease;
   }
   body .header .header-menu .search-container .search-form .search-input-white {
-    width: 80vw;
+    width: 70vw;
     background-color: white;
     padding: 3vw;
     border-radius: 5px;
@@ -390,7 +396,6 @@
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
-    position: absolute;
     background: none;
     border: none;
     color: #2d3a42;
@@ -1245,8 +1250,7 @@
 @media screen and (min-width: 768px) {
   .main-contact {
     margin: 0;
-    width: 100v;
-    margin-top: 10vh;
+    width: 100vw;
     background-image: -webkit-gradient(linear, left top, left bottom, from(#04444dd7), to(#022655d8)), url(/content/images/brent-cox-mid.jpg);
     background-image: linear-gradient(#04444dd7, #022655d8), url(/content/images/brent-cox-mid.jpg);
     background-size: cover;
@@ -1272,7 +1276,7 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    width: 80vw;
+    width: 50vw;
     height: 100vh;
   }
   .main-contact .form h2,
@@ -1300,13 +1304,26 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .main-contact .form .form-fieldset .for-desktop {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 2vw;
   }
   .main-contact .form .form-fieldset label {
     width: 80%;
     color: white;
-    margin-top: 5vw;
+    margin-top: 2vw;
   }
   .main-contact .form .form-fieldset label::after {
     content: " *";
@@ -1314,8 +1331,8 @@
   }
   .main-contact .form .form-fieldset .label-min {
     font-size: 0.8rem;
-    -webkit-transform: translateY(-2vw);
-            transform: translateY(-2vw);
+    -webkit-transform: translateY(-1vw);
+            transform: translateY(-1vw);
     -webkit-transition: 0.2s ease;
     transition: 0.2s ease;
   }
@@ -1326,6 +1343,7 @@
     border: none;
     border-bottom: 1px solid white;
     color: white;
+    margin: 0vw 2vw;
   }
   .main-contact .form .form-fieldset .input-writted {
     border-bottom: 1px solid #00d8ff;
@@ -1337,10 +1355,10 @@
     border: 1px solid white;
   }
   .main-contact .form .form-fieldset .submit-btn {
-    width: 100%;
+    width: 50%;
     border-radius: 50px;
-    margin-top: 6vw;
-    padding: 5vw 0;
+    margin: 3vw 13vw;
+    padding: 2vw 0;
     border: solid 1px white;
     color: white;
     text-transform: uppercase;
