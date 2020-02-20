@@ -896,7 +896,7 @@
     transition: .5s ease;
   }
   main .activity-list .activity-spot .activity-infos a .infos-location {
-    font-weight: lighter;
+    display: none;
   }
   main .activity-list .activity-spot .activity-infos a img {
     width: 80vw;
@@ -955,6 +955,7 @@
             filter: drop-shadow(0.5em 0px 0px grey) drop-shadow(-0.5em 0px 0px grey);
   }
   main .activity-spot.min .activity-infos .infos-location {
+    display: block !important;
     color: #00d8ff !important;
   }
   main .activity-spot.min .activity-infos .image-spot {

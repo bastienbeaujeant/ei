@@ -342,7 +342,7 @@
               transition: .5s ease;
             }
             .infos-location {
-              font-weight: lighter;
+              display: none;
             }
             
             img {
@@ -400,6 +400,7 @@
           }
         }
         .infos-location {
+          display: block !important;
           color: $maincolor !important;
         }
         .image-spot{
