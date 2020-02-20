@@ -3,12 +3,13 @@
     width: 100vw;
     margin: 0;
     padding: 0;
-
+//Classe contenant le titre du main
     .que-faire {
       margin: 6vh 3vw 2vh;
       color: $maincolor;
       font-weight: bold;
     }
+    //Classe contenant le bouton pour avoir des tickets
     .get-ticket {
       width: 100vw;
       margin-top: 3vh;
@@ -53,6 +54,7 @@
         }
       }
     }
+    //Classe contenant la liste des activités
     .activity-list {
       margin: 0;
       padding: 0px;
@@ -60,6 +62,7 @@
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
+       //classe contenant chaque activités
       .activity-spot {
         width: 22vw;
         height: 50vh;
@@ -72,6 +75,7 @@
         .out{
           color: $navcolor;
         }
+        //informations des activités
         .activity-infos {
           display: flex;
           flex-direction: column;
@@ -120,6 +124,7 @@
               padding: 10px 20px;
             }
           }
+          //Classe boutons d'interaction
           .spot-btn {
             width: 50%;
             padding: 20px;
@@ -146,6 +151,7 @@
                 margin-right: 20px;
               }
             }
+            //pastilles X3
             &::after {
               content: "";
               position: absolute;
@@ -163,6 +169,7 @@
           }
         }
       }
+      //Activité minifiée
       .activity-spot.min {
         width: 22vw;
         height: 50vh;
@@ -253,7 +260,7 @@
               width: 0.25em;
               height: 0.25em;
               border-radius: 50%;
-              background: grey;
+              background-color: rgb(141, 141, 141);
               bottom: 12vw;
               left: 20vw;
               margin-bottom: -0.5em;
@@ -272,22 +279,26 @@
     width: 100vw;
     margin: 0;
     padding: 0;
-
+    //Classe contenant le titre du main
     .que-faire {
       text-align: center;
       color: $maincolor;
       font-weight: bold;
     }
+    //Classe contenant la modification par rapport à la localisation de l'activité
     .center {
       color: $appearblocktext;
     }
+    //Classe contenant la modification par rapport à la localisation de l'activité
     .out{
       color: $navcolor;
     }
+    //Classe contenant la liste des activités
     .activity-list {
       margin: 0;
       padding: 0px;
       width: 90vw;
+      //classe contenant chaque activités
       .activity-spot {
         width: 90vw;
         margin: 5vw;

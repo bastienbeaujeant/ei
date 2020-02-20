@@ -7,7 +7,6 @@
   <meta name="title" content="Kazan - The ultimate competition of WorldSkills" />
   <meta name="description"
     content="The ultimate competition dedicated for any manuals and technologicals skills, loves and works just for fun, for their work or just exchanging their passion with others…" />
-
   <meta property="og:title" content="Guide touristique de la ville de Kazan" />
   <meta property="og:type" content="article" />
   <meta property="og:description" content="The ultimate competition dedicated for any manuals and technologicals skills, loves and works just for
@@ -20,6 +19,7 @@
 </head>
 
 <body>
+  <!--Header (pareil que la page d'accueil)-->
   <header class="header">
     <img src="/content/images/logo_kazan.png" alt="logo kazan city" class="logo-kazan" />
     <h1><span class="invisible">Kazan Site Web travel tour</span></h1>
@@ -28,7 +28,6 @@
       <span class="span-middle"> </span>
       <span class="span-bottom"> </span>
     </div>
-
     <nav class="header-menu none">
       <div class="search-container">
         <form action="/action_page.php" class="search-form">
@@ -45,7 +44,6 @@
         <li class="header-menu-li"><a href="#">Get Tickets</a></li>
       </ul>
     </nav>
-
     <div class="header-infos">
       <h1 class="header-title">22 > 27</h1>
       <h2 class="header-subtitle">August</h2>
@@ -57,14 +55,17 @@
       <button class="schedule">See schedule</button>
     </div>
   </header>
+  <!--Début du main contact-->
   <main class="main-contact"></main>
+  <!--Fin du main contact-->
+  <!--Début du footer avec le formulaire de contact-->
   <footer class="footer-contact">
-
-
+    <!--Début du formulaire-->
     <form action="/action_page.php" class="form">
+      <!--Titre du formulaire-->
       <h2 class="h2-conctact">Contact</h2>
-
       <p class="p-conctact">Besoin d'un contact ?</p>
+      <!--Début des champs d'entrées-->
       <fieldset class="form-fieldset">
         <label for="fname" class="label-contact">Prénom</label>
         <input data-id="0" type="text" id="fname" name="fname" value="" class="input-contact" required>
@@ -76,11 +77,12 @@
         <input data-id="3" type="text" id="objet" name="fname" value="" class="input-contact" required>
         <label for="fname" class="label-contact label-min">Message</label><br>
         <textarea id="textarea-contact" rows="8" cols="50" required></textarea>
+        <!--Bouton submit du formulaire-->
         <input type="submit" value="Enjoy" class="submit-btn">
       </fieldset>
     </form>
+    <!--Fin du formulaire-->
     <script src="main.js"></script>
   </footer>
 </body>
-
 </html>

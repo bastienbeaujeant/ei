@@ -4,11 +4,12 @@
     margin: 0;
     padding: 0;
     width: 100vw;
-
+    //classe de tout le header
     .header {
       h1 {
         margin: 0px;
       }
+      //classe permettant de cacher certaines choses
       .invisible {
         display: none;
       }
@@ -20,7 +21,7 @@
         position: absolute;
         z-index: 1;
       }
-
+      //classe contenant le menu de navigation
       .header-menu {
         transform: translateX(0vw);
         height: 10vh;
@@ -31,6 +32,7 @@
         align-items: center;
         justify-content: flex-end;
         animation: transform 1s ease;
+        //classe contenant la recherche
         .search-container {
           order: 1;
           position: relative;
@@ -51,6 +53,7 @@
             }
           }
         }
+        //Liste contenant le menu
         .header-menu-ul {
           order: -1;
           width: 40%;
@@ -83,38 +86,42 @@
           }
         }
       }
+      //Classe contenant les infos dans le header
       .header-infos {
         height: 50vh;
         background-image: linear-gradient(#04444d91, #1f02559d),
           url(/content/images/header.jpg);
         background-size: cover;
         background-repeat: no-repeat;
-        
-
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        //Image du header
         .image-header {
           width: auto;
           height: 50vh;
           top: 0;
         }
+        //titre du header
         .header-title {
           margin-top: 30vh;
           color: $maincolor;
           font-size: 4em;
           font-weight: lighter;
         }
+        //sous-titre du header
         .header-subtitle {
           color: $maincolor;
           margin-top: 0;
           font-size: 2em;
           font-weight: lighter;
         }
+        //chapeau du header
         .header-hat {
           display: none;
         }
+        //bouton des horaires
         .schedule {
           cursor: pointer;
           margin: 10px;
@@ -131,9 +138,6 @@
         }
       }
     }
-  }
-  .noscroll {
-    overflow: hidden;
   }
 }
 @media screen and (max-width: 768px) {
@@ -220,6 +224,7 @@
       .fixed {
         position: fixed;
       }
+      //header disparu en mode mobile
       .header-menu.none {
         transform: translateX(-100vw);
         opacity: 0;
@@ -234,6 +239,7 @@
         align-items: flex-end;
         justify-content: flex-end;
         transition: 1s ease;
+        //conteneur de la recherche
         .search-container {
           align-self: flex-start;
           position: fixed;
@@ -254,6 +260,7 @@
             }
           }
         }
+        //liste du menu
         .header-menu-ul {
           padding: 0;
           width:80vw;
@@ -273,6 +280,7 @@
           }
         }
       }
+      //menu en mode mobile ouvert
       .header-menu {
         transform: translateX(0vw);
         opacity: 1;
@@ -339,9 +347,11 @@
           }
         }
       }
+      //Classe qui change le fond en rose lorsqu'on clique sur la recherche
       .pink-menu{
         background-color: $navcolor;
       }
+      //Le header derrière le menu en mode mobile
       .header-infos {
         height: 100vh;
         background-image: linear-gradient(#04444d91, #1f02559d),
@@ -374,6 +384,7 @@
         .header-hat {
           display: none;
         }
+        //bouton des horaires
         .schedule {
           margin: 10px;
           margin-top: 30px;
@@ -390,6 +401,7 @@
       }
     }
   }
+  //classe permettant d'avoir un menu fixe
   .noscroll {
     overflow: hidden;
   }

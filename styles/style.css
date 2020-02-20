@@ -170,9 +170,6 @@
     -webkit-box-shadow: 0px 0px 13px -2px #3f3f3f;
             box-shadow: 0px 0px 13px -2px #3f3f3f;
   }
-  .noscroll {
-    overflow: hidden;
-  }
 }
 
 @media screen and (max-width: 768px) {
@@ -807,7 +804,7 @@
     width: 0.25em;
     height: 0.25em;
     border-radius: 50%;
-    background: grey;
+    background-color: #8d8d8d;
     bottom: 12vw;
     left: 20vw;
     margin-bottom: -0.5em;
@@ -1021,8 +1018,8 @@
 }
 
 @media screen and (min-width: 768px) {
-  footer {
-    width: 100vw;
+  .footer {
+    width: 150vh;
     margin-top: 10vh;
     background-image: -webkit-gradient(linear, left top, left bottom, from(#04444dd7), to(#022655d8)), url(/content/images/brent-cox-mid.jpg);
     background-image: linear-gradient(#04444dd7, #022655d8), url(/content/images/brent-cox-mid.jpg);
@@ -1035,7 +1032,7 @@
         -ms-flex-pack: center;
             justify-content: center;
   }
-  footer .footer-section {
+  .footer .footer-section {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1049,12 +1046,12 @@
             align-items: center;
     color: white;
     width: 80vw;
-    margin-top: 8vh;
+    margin-top: 0vh;
   }
-  footer .footer-section .footer-explain {
+  .footer .footer-section .footer-explain {
     width: 35vw;
   }
-  footer .footer-section .footer-head {
+  .footer .footer-section .footer-head {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1062,17 +1059,17 @@
         -ms-flex-align: center;
             align-items: center;
   }
-  footer .footer-section .footer-head .pin-location-logo {
+  .footer .footer-section .footer-head .pin-location-logo {
     height: 1.5em;
     width: auto;
     padding-right: 4vw;
   }
-  footer .footer-section .footer-contact {
+  .footer .footer-section .footer-contact {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
   }
-  footer .footer-section .kazan-night {
+  .footer .footer-section .kazan-night {
     -webkit-box-ordinal-group: 1;
         -ms-flex-order: 0;
             order: 0;
@@ -1081,7 +1078,7 @@
     -webkit-box-shadow: 0px 0px 10px -3px white;
             box-shadow: 0px 0px 10px -3px white;
   }
-  footer .footer-section .logo-partner {
+  .footer .footer-section .logo-partner {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
@@ -1090,7 +1087,7 @@
     width: auto;
     height: 20vh;
   }
-  footer .footer-section .rs {
+  .footer .footer-section .rs {
     -webkit-box-ordinal-group: 1;
         -ms-flex-order: 0;
             order: 0;
@@ -1110,7 +1107,7 @@
         -ms-flex-pack: center;
             justify-content: center;
   }
-  footer .footer-section .rs .follow-us {
+  .footer .footer-section .rs .follow-us {
     color: #00d8ff;
     font-size: 1.2rem;
     padding: 1vh;
@@ -1122,7 +1119,7 @@
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-  footer .footer-section .rs .rs-links {
+  .footer .footer-section .rs .rs-links {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1135,12 +1132,12 @@
     padding: 10px 10px 0px 10px;
     color: #2d3a42;
   }
-  footer .footer-section .visit-tatarstan {
+  .footer .footer-section .visit-tatarstan {
     font-weight: bold;
   }
-  footer .footer-section .footer-tel-numb,
-  footer .footer-section .footer-speaker-support,
-  footer .footer-section .visit-tatarstan {
+  .footer .footer-section .footer-tel-numb,
+  .footer .footer-section .footer-speaker-support,
+  .footer .footer-section .visit-tatarstan {
     margin: 0;
     margin-bottom: 10px;
   }

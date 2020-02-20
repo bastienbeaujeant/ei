@@ -1,3 +1,4 @@
+//Variables de couleurs
 $maincolor: #00d8ff;
 $textcolor: #737b80;
 $navcolor: #f297b1;
@@ -6,7 +7,7 @@ $appearblocktext: #d4ce9a;
 $appearblocktitle: #f899b4;
 $appearblockcolor: #2d3a42;
 $appeartext: #284e68;
-
+//imports des polices de charactère
 @font-face {
   font-family: "Montserrat";
   src: url("../content/fonts/Montserrat/Montserrat-Medium.ttf");
@@ -19,6 +20,7 @@ $appeartext: #284e68;
   font-family: "Marven";
   src: url("../content/fonts/maven-pro/MavenPro-Medium.ttf");
 }
+//imports des différents fichiers scss
 @import "header";
 @import "main";
 @import "footer";
