@@ -75,6 +75,16 @@ const Anime = function() {
       element.classList.add("min");
     });
   });
+  //Changement de classe pour le bouton favoris <3
+favbutton.forEach(element => {
+  element.addEventListener("click", function() {
+    if (this.childNodes[0].classList == "far fa-heart") {
+      this.childNodes[0].classList.add("fas") + "fa-heart";
+    } else {
+      this.childNodes[0].classList.remove("fas") + " fa-heart";
+    }
+  });
+});
 };
 //Appelle l'Ajax
 const Main = function() {
@@ -181,13 +191,4 @@ contactInput.forEach(element => {
     minLabel[id].classList.toggle("label-min");
   });
 });
-//Changement de classe pour le bouton favoris <3
-favbutton.forEach(element => {
-  element.addEventListener("click", function() {
-    if (this.childNodes[0].classList == "far fa-heart") {
-      this.childNodes[0].classList.add("fas") + "fa-heart";
-    } else {
-      this.childNodes[0].classList.remove("fas") + " fa-heart";
-    }
-  });
-});
+
