@@ -30,7 +30,7 @@ let Affiche = function() {
         <li class="activity-spot min">
         <figure class="activity-infos">
           <a href="#">
-            <h2 class="infos-title">${element.title} ${element.title2}</span></h2>
+            <h2 class="infos-title">${element.title} <span>${element.title2}</span></h2>
             <h3 class="infos-location ">${element.situation}</h3>
             <img src="${element.img}" alt="${element.text_img}"
               class="image-spot" />

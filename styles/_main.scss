@@ -12,7 +12,7 @@
     //Classe contenant le bouton pour avoir des tickets
     .get-ticket {
       width: 100vw;
-      margin-top: 3vh;
+      margin-top:-7vh;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -57,6 +57,7 @@
     //Classe contenant la liste des activités
     .activity-list {
       margin: 0;
+      margin-bottom: 10vh;
       padding: 0px;
       width: 100vw;
       display: flex;
@@ -229,12 +230,13 @@
             }
           }
           .spot-btn {
-            width: 50%;
+            display: none;
             padding: 20px;
             display: flex;
             justify-content: space-between;
             position: relative;
             .like-btn {
+              display: none;
               color: white;
               border: none;
               background: none;

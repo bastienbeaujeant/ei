@@ -123,6 +123,11 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-transition: .5s ease;
+    transition: .5s ease;
+  }
+  body .header .header-menu .header-menu-ul .header-menu-li a:hover {
+    color: white;
   }
   body .header .header-infos {
     height: 50vh;
@@ -178,6 +183,12 @@
     color: white;
     -webkit-box-shadow: 0px 0px 13px -2px #3f3f3f;
             box-shadow: 0px 0px 13px -2px #3f3f3f;
+    -webkit-transition: 1s ease;
+    transition: 1s ease;
+  }
+  body .header .header-infos .schedule:hover {
+    background-color: white;
+    color: #00d8ff;
   }
 }
 
@@ -502,7 +513,7 @@
   }
   main .get-ticket {
     width: 100vw;
-    margin-top: 3vh;
+    margin-top: -7vh;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -561,6 +572,7 @@
   }
   main .activity-list {
     margin: 0;
+    margin-bottom: 10vh;
     padding: 0px;
     width: 100vw;
     display: -webkit-box;
@@ -772,7 +784,7 @@
     display: none;
   }
   main .activity-list .activity-spot.min .activity-infos .spot-btn {
-    width: 50%;
+    display: none;
     padding: 20px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -783,6 +795,7 @@
     position: relative;
   }
   main .activity-list .activity-spot.min .activity-infos .spot-btn .like-btn {
+    display: none;
     color: white;
     border: none;
     background: none;
